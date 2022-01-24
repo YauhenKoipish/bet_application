@@ -1,0 +1,128 @@
+.bonus {
+  position: relative;
+
+  padding: 20px;
+  padding-top: 10px;
+  min-height: 164px;
+
+  text-align: left;
+
+  //background: url("../Images/bonus/bg-small.svg") no-repeat;
+  border-bottom: 1px solid #204c4e;
+}
+
+.bonus__cap {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 200px;
+  height: 164px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.bonus__title {
+  margin-bottom: 10px;
+
+  font-size: 11px;
+}
+
+.bonus__help {
+  position: absolute;
+  top: 2px;
+  right: 60px;
+
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.bonus__money {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+
+  .bonus-icon__img {
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+  }
+}
+
+.bonus__bonus {
+  position: relative;
+
+  font-size: 15px;
+}
+
+.bonus__line {
+  position: relative;
+
+  width: 100%;
+  height: 5px;
+  margin-bottom: 5px;
+
+  background-color: #b4e2e2;
+}
+
+.bonus__grow {
+  position: absolute;
+  left: 0;
+
+  width: 50%;
+  max-width: 100%;
+  height: 5px;
+
+  background: linear-gradient(to right, #74d0d5 0%, red 100%);
+}
+
+.bonus__sum {
+  position: relative;
+  font-size: 14px;
+  text-align: right;
+  margin-left: 4px;
+}
+
+.bonus__countdown {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 15px;
+
+  font-size: 11px;
+  line-height: 13px;
+
+  span {
+    margin-right: 3px;
+  }
+}
+
+.bonus__days,
+.bonus__time {
+  span:first-of-type {
+    font-size: 14px;
+  }
+}
+
+.bonus__time {
+  display: flex;
+}
+
+.bonus__button {
+  button {
+    width: 160px;
+    height: 40px;
+
+    color: var(--color-text-white);
+    font-size: 14px;
+    font-weight: 300;
+
+    // background: red;
+  }
+}

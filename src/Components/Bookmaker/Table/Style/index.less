@@ -1,0 +1,153 @@
+.bookmaker_table {
+  position: absolute;
+  left: 230px;
+  width: calc(100% - 230px);
+  .bookmaker_table_container_table_subTitle {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    background-color: var(--search-active-bg-color);
+    font-size: 14px;
+  }
+  .bookmaker_table_container_table_column {
+    display: flex;
+    background: #697080;
+    :nth-child(1) {
+      width: 6%;
+    }
+    :nth-child(2) {
+      width: 7%;
+    }
+    :nth-child(3) {
+      width: 8%;
+    }
+    :nth-child(4) {
+      width: 8%;
+    }
+    :nth-child(5) {
+      width: 8%;
+    }
+    :nth-child(6) {
+      width: 8%;
+    }
+    :nth-child(7) {
+      width: 6%;
+    }
+    :nth-child(8) {
+      width: 9%;
+    }
+    :nth-child(9) {
+      width: 10%;
+    }
+    :nth-child(10) {
+      width: 12%;
+    }
+    :nth-child(11) {
+      width: 10%;
+    }
+    :nth-child(12) {
+      width: 8%;
+    }
+    .bookmaker_table_column_elements {
+      // width: 100px;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #0e1421;
+      &:last-child {
+        border-right: none;
+      }
+
+      .bookmaker_table_title_item {
+        text-align: left;
+        // border-right: 1px solid #0e1421;
+        height: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0 10px;
+      }
+    }
+  }
+  .container_row {
+    display: flex;
+    :nth-child(1) {
+      width: 6%;
+    }
+    :nth-child(2) {
+      width: 7%;
+    }
+    :nth-child(3) {
+      width: 8%;
+    }
+    :nth-child(4) {
+      width: 8%;
+    }
+    :nth-child(5) {
+      width: 8%;
+    }
+    :nth-child(6) {
+      width: 8%;
+    }
+    :nth-child(7) {
+      width: 6%;
+    }
+    :nth-child(8) {
+      width: 9%;
+    }
+    :nth-child(9) {
+      width: 10%;
+    }
+    :nth-child(10) {
+      width: 12%;
+    }
+    :nth-child(11) {
+      width: 10%;
+    }
+    :nth-child(12) {
+      width: 8%;
+    }
+  }
+  .bookmaker_table_content_item {
+    height: 38px;
+    background: #232a3b;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    border-right: 1px solid var(--body-bg);
+    border-bottom: 1px solid var(--body-bg);
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    text-overflow: clip;
+    text-align: start;
+    overflow: hidden;
+    &.square {
+      &:before {
+        // position: absolute;
+        // top: 13px;
+        // left: 14px;
+        content: "";
+        width: 14px;
+        height: 14px;
+        border: 1px solid #ffffff;
+      }
+    }
+  }
+}
+
+.scroll_horizontal {
+  // width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.bookmaker_table_column_elements.active {
+  .container_row {
+    .bookmaker_table_content_item {
+      background: #7b8eef;
+    }
+  }
+}

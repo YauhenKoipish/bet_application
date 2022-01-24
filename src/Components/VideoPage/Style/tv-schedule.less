@@ -1,0 +1,54 @@
+.tv-schedule {
+  position: absolute;
+  top: 80px;
+  left: 0;
+
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+  padding: 20px;
+
+  overflow: auto;
+
+  .tv-stream__type {
+    font-weight: 500;
+
+    cursor: initial;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.tv-schedule__nav {
+  width: 120px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  padding-top: 35px;
+}
+
+.tv-schedule__elem {
+  height: 40px;
+  margin-bottom: 5px;
+
+  cursor: pointer;
+
+  &.active {
+    font-weight: 500;
+  }
+}
+
+.tv-schedule__close {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+
+  //background: url("../Images/tv/close.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.tv-schedule__chosen {
+  display: none;
+}

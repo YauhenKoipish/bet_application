@@ -1,0 +1,6 @@
+:root {
+  --prim: #000;
+}
+body {
+  background-color: var(--prim);
+}

@@ -1,0 +1,85 @@
+.money-small {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  border-bottom: 1px solid #204c4e;
+}
+
+.money-small__top {
+  display: flex;
+  margin-bottom: 20px;
+
+  > div {
+    width: 50%;
+  }
+}
+
+.money-small__data {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    margin-bottom: 3px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.money-small__row {
+  display: flex;
+  margin-bottom: 20px;
+
+  > div {
+    width: 50%;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.money-small__title {
+  font-weight: 500;
+}
+
+.money--small__info {
+  &.good {
+    color: #4b9a72;
+  }
+
+  &.bad {
+    color: #e57373;
+  }
+
+  &.cancel {
+    color: #d5c751;
+    text-decoration: underline;
+  }
+}
+
+.money-small__info,
+.money-big__cell {
+  &.bonus-icon {
+    span {
+      position: relative;
+
+      padding-right: 15px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        width: 10px;
+        height: 12px;
+
+        background: yellow url("../img/coin.svg") no-repeat center;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

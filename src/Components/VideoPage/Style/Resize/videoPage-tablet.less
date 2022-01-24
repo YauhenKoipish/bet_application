@@ -1,0 +1,151 @@
+@media screen and (max-width: 1023px) {
+  .tv__main {
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+  .tv__photos {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .tv__free {
+    margin-right: auto;
+    margin-left: 0;
+    width: 220px;
+    margin-top: 30px;
+
+    font-size: 40px;
+  }
+
+  .tv__yellow {
+    width: 566px;
+    height: 230px;
+  }
+
+  .tv__tv {
+    margin-top: -100px;
+    width: 353px;
+    height: 286px;
+  }
+
+  .tv__buttons {
+    justify-content: left;
+    margin-top: -40px;
+  }
+
+  .tv__companies {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tv__company {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .tv-schedule {
+    .tv-stream__item {
+      width: 50%;
+      min-width: 360px;
+      flex-shrink: 0;
+      margin-right: 0;
+
+      &:nth-of-type(2n) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .tv-stream__wrapper {
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tv__main {
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+
+  .tv__free {
+    margin-right: 0;
+    margin-left: 180px;
+    margin-top: 0px;
+
+    font-size: 23px;
+  }
+
+  .tv__yellow {
+    width: 319px;
+    height: 131px;
+  }
+
+  .tv__tv {
+    width: 246px;
+    height: 193px;
+  }
+
+  .tv__company {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-height: 75px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .tv-schedule {
+    .tv-stream__item {
+      width: 50%;
+      min-width: 345px;
+    }
+
+    .tv-stream__wrapper {
+      width: 340px;
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .tv__main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .tv__yellow {
+    width: 275px;
+    height: 113px;
+  }
+
+  .tv__free {
+    margin-left: 110px;
+    width: 108px;
+
+    font-size: 23px;
+  }
+  .tv-schedule {
+    .tv-stream__item {
+      width: 50%;
+      min-width: 310px;
+    }
+
+    .tv-stream__wrapper {
+      width: 300px;
+    }
+  }
+}

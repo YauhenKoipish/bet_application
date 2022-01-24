@@ -1,0 +1,198 @@
+.overflow {
+  overflow: hidden;
+}
+
+@keyframes dropDown {
+  from {
+    top: -200px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.tv {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tv__header {
+  padding-left: 40px;
+  padding-right: 50px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tv__nav {
+  display: flex;
+}
+
+.tv__burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+
+  background: url("../Img/burger.svg") no-repeat center;
+}
+
+.tv__logo {
+  width: 135px;
+  height: 36px;
+  margin-right: 95px;
+  margin-bottom: -10px;
+
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.tv__nav-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  list-style: none;
+
+  li {
+    padding-left: 10px;
+    margin-right: 25px;
+    height: 20px;
+
+    cursor: pointer;
+
+    &.active {
+      position: relative;
+
+      font-weight: 500;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 2px;
+        height: 100%;
+
+        background-color: red;
+      }
+    }
+  }
+}
+
+.tv__name {
+  font-size: 11px;
+}
+
+.tv__main {
+  padding-top: 85px;
+  padding-left: 75px;
+  padding-right: 80px;
+  padding-bottom: 35px;
+}
+
+.tv__photos {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.tv__main-pic {
+  //position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.tv__yellow {
+  width: 577px;
+  height: 234px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.tv__tv {
+  width: 464px;
+  height: 376px;
+  margin-top: 30px;
+  margin-left: auto;
+
+  background: url("../Img/tv.png") no-repeat;
+}
+
+.tv__free {
+  //position: absolute;
+
+  margin-left: auto;
+
+  font-size: 43px;
+  font-family: "Muller", Sans-serif;
+  font-style: italic;
+
+  transform: rotate(-5deg);
+}
+
+.tv__buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.tv__button {
+  button {
+    width: 280px;
+    height: 70px;
+
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: var(--color-text-white);
+
+    background-color: red;
+  }
+}
+
+.tv__companies {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tv__moto {
+  text-align: center;
+  font-size: 29px;
+  font-style: italic;
+  font-family: "Muller", Sans-serif;
+}
+
+.tv__blur {
+  position: relative;
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  -webkit-filter: url(#blur-filter);
+  filter: url(#blur-filter);
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}

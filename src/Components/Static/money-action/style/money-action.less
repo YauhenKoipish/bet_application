@@ -1,0 +1,95 @@
+.money-action {
+  flex-grow: 10;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: var(--money-action-bg-color);
+
+  //background-color: #0c1855;
+  //background-color: #253030;
+  // background-color: #000000;
+}
+
+.money-action__header {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 60px;
+  padding-left: 65px;
+  width: 670px;
+
+  span {
+    font-size: 80px;
+    line-height: 68px;
+    font-weight: 500;
+    color: #99cccc;
+    opacity: 0.5;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    z-index: 0;
+
+    width: 637px;
+    height: 42px;
+
+    opacity: 0.8;
+
+    background: var(--right-component-coupon-header-item-color);
+  }
+}
+
+.money-action__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 30px;
+
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.money-action__item {
+  width: 49%;
+  flex-shrink: 0;
+  margin-bottom: 60px;
+
+  &:last-of-type,
+  &:nth-last-of-type(2) {
+    margin-bottom: 0;
+  }
+}
+
+.money-action__type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.money-action__img {
+  width: 50px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.money-action__name {
+  font-weight: 500;
+}
+
+.money-action__line {
+  display: flex;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.money-action__title {
+  margin-right: 10px;
+
+  font-weight: 500;
+}

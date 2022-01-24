@@ -1,0 +1,112 @@
+@media screen and (max-width: 413px) {
+  .statistic__team {
+    width: 115px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .statistic {
+    padding: 0;
+    margin-bottom: 2px;
+
+    &.bejsbol {
+      .statistic__details {
+        padding: 12px 76px;
+        padding-top: 17px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+
+      .statistic__baseball {
+        margin-top: 0;
+      }
+
+      .statistic__field {
+        margin-right: 0;
+      }
+
+      .statistic__in-game {
+        flex-direction: column;
+      }
+
+      .statistic__row {
+        width: 50px;
+        justify-content: space-between;
+      }
+
+      .statistic__wrapper {
+        margin-left: auto;
+      }
+
+      .statistic__numbers {
+        margin-top: 15px;
+      }
+    }
+
+    &.kriket {
+      .statistic__team {
+        width: 175px;
+      }
+    }
+  }
+
+  .statistic__teams {
+    align-items: center;
+    padding: 20px 76px;
+    padding-top: 23px;
+  }
+
+  .statistic__score {
+    margin-bottom: 0;
+  }
+
+  .statistic__team {
+    width: 217px;
+    padding: 0;
+
+    font-size: 18px;
+  }
+
+  .statistic__more {
+    > div {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+
+      text-align: left;
+      font-size: 14px;
+
+      transform: translateY(-50%);
+    }
+
+    .aussie {
+      position: relative;
+      left: auto;
+      top: 15px;
+
+      margin-top: -10px;
+    }
+  }
+
+  .statistic__arrows {
+    right: 30px;
+    top: 27px;
+  }
+
+  .statistic__dropdown {
+    .statistic__more {
+      div {
+        position: static;
+      }
+    }
+
+    .statistic__team {
+      font-size: 14px;
+    }
+
+    .statistic__score {
+      margin-bottom: 5px;
+    }
+  }
+}

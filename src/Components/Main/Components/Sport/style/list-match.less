@@ -1,0 +1,78 @@
+.list-match {
+  width: 100%;
+
+  color: var(--color-text-white);
+}
+
+.list-match__description {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.list-match__elem {
+  border-bottom: 1px solid
+    var(--centralComponentHeaderStartPageTableItemBorder-color);
+
+  &:last-of-type {
+    border: none;
+  }
+
+  .list-match__description {
+    background-color: var(--list-match-categories-bg);
+    border-bottom: 1px solid var(--list-match-categorise-border-color);
+  }
+
+  &.open {
+    .list-match__arrow {
+      transform: rotate(180deg);
+    }
+
+    .list-match__country {
+      display: block;
+    }
+  }
+}
+
+.list-match__country {
+  display: none;
+
+  .list-match__arrow {
+    transform: rotate(0deg) !important;
+  }
+
+  .list-match__description {
+    background-color: var(--line-title-bg);
+    border-radius: 4px;
+  }
+
+  &.open {
+    .list-match__teams {
+      display: block;
+    }
+
+    .list-match__arrow {
+      transform: rotate(180deg) !important;
+    }
+  }
+}
+
+.list-match__teams {
+  display: none;
+
+  .list-match__description {
+    // background-color: #000000;
+  }
+}
+
+.list-match__arrow,
+.list-match__plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}

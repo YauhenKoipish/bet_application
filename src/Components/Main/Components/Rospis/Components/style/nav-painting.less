@@ -1,0 +1,32 @@
+.nav-painting {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  overflow: auto;
+  padding: 0 20px;
+  background-color: var(--painting-item);
+}
+
+.nav-painting__title {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  height: 31px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  padding: 0 10px;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #798192;
+
+  &.active {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-text-white);
+    font-weight: 500;
+    opacity: 1;
+    background-color: var(--active-painting-button-color);
+  }
+}

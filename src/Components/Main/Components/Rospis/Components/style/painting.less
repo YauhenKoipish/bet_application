@@ -1,0 +1,289 @@
+.painting__header {
+  width: 100%;
+  height: 40px;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--active-item-menu-bg);
+}
+
+.painting__title {
+  font-size: 20px;
+  line-height: 23px;
+
+  opacity: 0.5;
+}
+
+.painting__arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 11px;
+    height: 6px;
+  }
+}
+
+.painting__name {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: var(
+    --painting-title-markets
+  ); //  var(--centralComponentTableHeaderTournament-color);
+  margin-bottom: 1px;
+}
+
+.painting__fav {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.painting__text {
+  margin-right: auto;
+}
+
+.painting__view {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.painting__type {
+  &.close {
+    .painting__arrow {
+      transform: rotate(180deg);
+    }
+
+    .painting__elem {
+      display: none;
+    }
+  }
+}
+
+.painting__elem {
+  &.close {
+    .painting__arrow {
+      transform: rotate(180deg);
+    }
+
+    .painting__line {
+      display: none;
+    }
+  }
+}
+
+.painting__line {
+  width: 100%;
+  display: flex;
+
+  &.paused {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background: rgba(7, 47, 49, 0.5);
+    }
+  }
+}
+
+.painting__item {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 15%;
+  min-height: 50px;
+  margin-right: 2px;
+  padding: 16px 10px;
+  align-items: center;
+  flex-shrink: 2;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--painting-item);
+  border-bottom: 1px solid #000000;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &.active {
+    background-color: var(--active-bets);
+    // border: 1px solid var(--line-content-color-border-coef);
+  }
+
+  .line__coef {
+    display: inline-block;
+    width: auto;
+
+    border-right: none;
+
+    &.green_rose::after {
+      top: -16px;
+      right: -10px;
+    }
+
+    &.red__fell {
+      bottom: -16px;
+      right: -10px;
+    }
+  }
+}
+
+.painting__team {
+  max-width: 70%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.painting__coef {
+  font-weight: 500;
+
+  input {
+    width: 50px;
+    padding-bottom: 4px;
+
+    text-align: center;
+    color: var(--color-text-white);
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-text-white);
+  }
+
+  ::-webkit-input-placeholder {
+    color: white;
+  }
+  ::-moz-placeholder {
+    color: white;
+  } /* Firefox 19+ */
+  :-moz-placeholder {
+    color: white;
+  } /* Firefox 18- */
+  :-ms-input-placeholder {
+    color: white;
+  }
+}
+
+.painting__dropdown {
+  position: relative;
+
+  width: 100%;
+  flex-shrink: 2;
+  margin-right: 2px;
+
+  &.open {
+    .painting__menu {
+      display: block;
+    }
+  }
+
+  > .painting__container {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.painting__container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+  background-color: red;
+}
+
+.painting__arrows {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 5px;
+    height: 8px;
+  }
+}
+
+.painting__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 50px;
+  display: none;
+
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.painting__interjection {
+  width: 20px;
+  height: 50px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2px;
+
+  background-color: #253030;
+}
+
+.painting__coef-mini {
+  width: 80px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #105f63;
+}
+
+.painting__summary {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
+
+  font-weight: 500;
+
+  background-color: #105f63;
+
+  &.active {
+    background: #253030;
+    border: 1px solid red;
+  }
+}

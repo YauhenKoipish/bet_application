@@ -1,0 +1,48 @@
+.calendar__registration {
+    position: absolute;
+
+    width: 100%;
+    background: var(--calendar-bg-column);
+    border-radius: 5px;
+    left: 0;
+    z-index: 9999;
+    top: 43px;
+    .columnDate {
+        display: flex;
+        .element_scroll {
+            border-right: 1px solid var(--calendar-border);
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            overflow: auto;
+
+            width: 33%;
+            span {
+                // color: var(--calendar-color-text-column);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 10px;
+                &.active {
+                    color: var(--calendar-color-text-active);
+                    // background: var(--calendar-color-text-bg-active);
+                }
+            }
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+    .button_seccuss {
+        width: 100%;
+        height: 40px;
+        .flex;
+        color: var(--calendar-button-color-text);
+
+        justify-content: center;
+        align-items: center;
+        background: var(--calendar-button-bg);
+        border-radius: 0 0 5px 5px;
+    }
+}

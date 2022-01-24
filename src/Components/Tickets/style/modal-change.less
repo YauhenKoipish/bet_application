@@ -1,0 +1,67 @@
+.modal-change {
+  position: absolute;
+  left: 20px;
+  z-index: 10;
+
+  width: 190px;
+  // padding-bottom: 10px;
+  // background-color: var(--mybets-dropdown-edit-bg);
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-change__list {
+  max-height: 130px;
+
+  overflow: auto;
+}
+
+.modal-change__element {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--mybets-dropdown-edit-bg);
+  border-radius: 4px;
+  border-bottom: 2px solid var(--bg-site);
+  font-weight: 300;
+  // &:last-child {
+  //   border-bottom: none;
+  // }
+  &.active {
+    position: relative;
+    background: var(--mybets-dropdown-edit-bg-active);
+    font-weight: 500;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+
+    //   width: 2px;
+    //   height: 100%;
+
+    //   // background-color: var(--color-text-white);
+    // }
+  }
+}
+
+.modal-change__coef {
+  margin-left: 5px;
+}
+
+.modal-change__total {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  display: none;
+}
+
+.modal-change__text {
+  margin-right: 10px;
+
+  font-size: 9px;
+  font-weight: 300;
+  opacity: 0.5;
+}

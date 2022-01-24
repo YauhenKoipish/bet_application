@@ -1,0 +1,65 @@
+.tv-form {
+	margin-left: auto;
+}
+
+.tv-form__fieldset {
+	display: flex;
+}
+
+.tv-form__label {
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+
+	input {
+		width: 120px;
+		padding-bottom: 5px;
+
+		color: var(--color-text-white);
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid var(--color-text-white);
+	}
+}
+
+.tv-form__name {
+	font-size: 11px;
+	opacity: 0.5;
+}
+
+.tv-form__description {
+	margin-left: auto;
+
+	font-size: 9px;
+	opacity: 0.5;
+
+	cursor: pointer;
+}
+
+.tv-form__enter {
+	position: relative;
+	height: 30px;
+
+	cursor: pointer;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 6px;
+		left: 7px;
+
+		width: 15px;
+		height: 18px;
+
+		//background: url("../Images/tv/enter.svg") no-repeat;
+	}
+
+	button {
+		width: 30px;
+		height: 30px;
+	}
+}

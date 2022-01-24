@@ -1,0 +1,54 @@
+{
+  "socketURL": "wss://abet-promo.ru/data/",
+  "isTranslation": false,
+  "isBonus": true,
+  "isLive": true,
+  "isOffers": false,
+  "isTestFeatures": true,
+  "isBRStatistic": true,
+  "smsRecording": 90,
+  "theme": {
+    "green": {
+      "base-1": "#204c4e",
+      "base-2": "#365d5f",
+      "base-3": "#ffffff",
+      "base-4": "#008286",
+      "base-5": "#61a8ab",
+      "base-6": "#cfaef9",
+      "base-7": "#008B8B",
+      "base-8": "#69cc99",
+      "base-9": "#f10000",
+      "base-10": "#16e427",
+      "base-11": "#000000"
+    },
+    "gray": {
+      "base-1": "#0c1422",
+      "base-2": "#222a3d",
+      "base-3": "#ffffff",
+      "base-4": "#008286",
+      "base-5": "#acacac",
+      "base-6": "#cfaef9",
+      "base-7": "#778cf6",
+      "base-8": "#687082",
+      "base-9": "#f10000",
+      "base-10": "#16e427",
+      "base-11": "#000000"
+    },
+    "black": {
+      "base-1": "#bebebe",
+      "base-2": "#9e9e9e",
+      "base-3": "#000000",
+      "base-4": "#686868",
+      "base-5": "#000000",
+      "base-6": "#cfaef9",
+      "base-7": "#687082",
+      "base-8": "#687082",
+      "base-9": "#f10000",
+      "base-10": "#16e427",
+      "base-11": "#000000"
+    }
+  },
+  "yellow": "#f2bf54",
+  "gray": "#DADADA",
+  "loginColor": "#798192"
+}

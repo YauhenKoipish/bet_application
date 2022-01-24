@@ -1,0 +1,77 @@
+.long-term {
+    .main-table__header {
+        padding-left: 20px;
+    }
+}
+
+.long-term__row {
+    display: flex;
+
+    border-bottom: 1px solid #253030;
+}
+
+.long-term__left,
+.long-term__right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.long-term__name {
+    width: 100%;
+    min-height: 50px;
+    flex-shrink: 2;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    background-color: #105f63;
+}
+
+.long-term__coef {
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    width: 60px;
+    flex-shrink: 0;
+
+    font-weight: 500;
+
+    background-color: #105f63;
+
+    .line__coef {
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        border-right: none;
+    }
+
+    &.active {
+        .line__coef {
+            background-color: var(--active-bets);
+
+            // border: 1px solid var(--line-content-color-border-coef);
+        }
+    }
+}
+
+.long-term__left {
+    .long-term__name {
+        justify-content: flex-end;
+
+        border-right: 2px solid #253030;
+    }
+
+    .long-term__coef {
+        border-right: 1px solid #253030;
+    }
+}
+
+.long-term__right {
+    .long-term__coef {
+        border-right: 2px solid #253030;
+    }
+}

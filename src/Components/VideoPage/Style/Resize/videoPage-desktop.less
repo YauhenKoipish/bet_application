@@ -1,0 +1,254 @@
+@media screen and (max-width: 1299px) {
+  .tv-stream {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    background-color: black;
+  }
+
+  .tv-stream__pic {
+    margin-bottom: 0;
+  }
+
+  .tv-stream__filters {
+    position: absolute;
+    bottom: 0;
+
+    height: 190px;
+    padding-top: 20px;
+    padding-right: 0;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .tv-stream__filter {
+    margin-bottom: 30px;
+    padding-right: 20px;
+  }
+
+  .tv-stream__elements {
+    flex-wrap: nowrap;
+    max-width: 100%;
+
+    overflow: auto;
+  }
+
+  .tv-stream__item {
+    flex-shrink: 0;
+  }
+
+  .tv-stream__close {
+    display: block;
+
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-top: -15px;
+    margin-right: -10px;
+
+    //background: url("../Images/tv/close.svg") no-repeat center;
+  }
+
+  .tv-stream__schedule {
+    display: none;
+  }
+  .tv-schedule {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    .tv-stream__filters {
+      position: static;
+
+      height: auto;
+      padding: 20px 0;
+    }
+
+    .tv-stream__filter {
+      padding-left: 120px;
+    }
+
+    .tv-stream__elements {
+      flex-wrap: wrap;
+      width: auto;
+      justify-content: flex-start;
+    }
+
+    .tv-stream__item {
+      width: 33%;
+      min-width: 320px;
+      flex-shrink: 0;
+      margin-right: 0;
+    }
+  }
+
+  .tv-schedule__nav {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    //display: none;
+  }
+
+  .tv-schedule__chosen {
+    display: block;
+  }
+
+  .tv-schedule__list-nav {
+    display: none;
+  }
+
+  .tv-schedule__close {
+    display: none;
+  }
+  .tv-doc {
+    flex-direction: column;
+    padding-right: 20px;
+  }
+
+  .tv-doc__description {
+    order: -1;
+    margin-bottom: 40px;
+  }
+
+  .tv-doc__list {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tv-doc__element {
+    width: 50%;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tv__tv {
+    width: 547px;
+    height: 443px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .tv__header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .tv__burger {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .tv__logo {
+    width: 37px;
+    height: 30px;
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+
+  .tv__header {
+    position: relative;
+  }
+
+  .tv__nav-list {
+    position: absolute;
+    top: -1000px;
+    left: 0;
+
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: #181818;
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      margin-bottom: 5px;
+
+      &.active {
+        font-weight: 300;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: -20px;
+
+      width: 40px;
+      height: 40px;
+
+      background: url("../Img/close.svg") no-repeat center;
+    }
+
+    &.open {
+      animation-iteration-count: 1;
+      animation: dropDown 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .tv__yellow {
+    width: 507px;
+    height: 206px;
+  }
+
+  .tv__tv {
+    width: 376px;
+    height: 305px;
+
+    background-size: contain;
+  }
+
+  .tv__free {
+    margin-right: 50px;
+
+    font-size: 32px;
+  }
+
+  .tv__button {
+    button {
+      width: 210px;
+      height: 40px;
+
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      color: var(--color-text-white);
+
+      background-color: red;
+    }
+  }
+
+  .tv__companies {
+    margin-bottom: 30px;
+  }
+
+  .tv__company {
+    height: 80px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .tv__moto {
+    font-size: 18px;
+  }
+}

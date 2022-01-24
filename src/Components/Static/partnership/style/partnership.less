@@ -1,0 +1,78 @@
+.partnership {
+  flex-grow: 10;
+  padding: 30px 50px;
+  padding-left: 0;
+  background-color: var(--partnership-bg-color);
+
+  //background-color: #0c1855;
+  //background-color: #253030;
+  // background-color: #000000;
+
+  p {
+    margin-bottom: 30px;
+
+    line-height: 21px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    font-weight: 500;
+    color: var(--color-text-white);
+  }
+}
+
+.partnership__header {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 60px;
+  padding-left: 65px;
+
+  span {
+    font-size: 80px;
+    line-height: 68px;
+    font-weight: 500;
+    color: #99cccc;
+    opacity: 0.5;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    z-index: 0;
+
+    width: 392px;
+    height: 42px;
+
+    opacity: 0.8;
+
+    background: var(--right-component-coupon-header-item-color);
+  }
+}
+
+.partnership__text {
+  padding-left: 50px;
+}
+
+.partnership__component {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 10px;
+
+    line-height: 21px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@media screen and (min-width: 1450px) {
+  .user-account__main {
+    .bet-service__main-button {
+      right: 230px;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .user-account__main {
+    .bet-service__main-button {
+      right: 230px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bets-window {
+    .bet__background {
+      left: -20px;
+
+      width: 254px;
+      margin: 0;
+    }
+
+    .bet__close {
+      top: 1px;
+      left: 0;
+    }
+  }
+  .bets-window {
+    .bet-history {
+      width: 254px;
+      margin: auto;
+      &.closed {
+        .bet-history__titles {
+          display: none;
+        }
+
+        .bet-history__line {
+          display: none;
+        }
+
+        .bet-history__total {
+          display: none;
+        }
+      }
+    }
+
+    .bet-history__header {
+      padding-left: 0;
+
+      &::before {
+        display: block;
+      }
+    }
+  }
+  .bets {
+    .bet-advice {
+      flex-direction: column;
+      background-color: var(--bet-advice-bg-color);
+    }
+
+    .bet-advice__text {
+      margin-bottom: 10px;
+
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+  .bets-window {
+    .bet-aside {
+      justify-content: space-between;
+      padding: 0 13px 10px 13px;
+      margin-top: 20px;
+    }
+
+    .bet-aside__bet,
+    .bet-aside__pay {
+      flex-direction: column;
+      height: 42px;
+      background-color: var(--active-item-menu-bg);
+      border-radius: 4px;
+      width: 100px;
+
+      input {
+        text-align: left;
+        border-radius: 4px;
+        border: none;
+        font-family: Roboto;
+        font-style: normal;
+        padding: 7px 0px 0px 6px;
+        font-size: 14px;
+        line-height: 16px;
+        height: 16px;
+      }
+      .bet-aside__numbers {
+        text-align: left;
+        border-radius: 4px;
+        border: none;
+        font-family: Roboto;
+        font-style: normal;
+        padding: 7px 0px 0px 4px;
+        font-size: 14px;
+        line-height: 16px;
+        height: 16px;
+      }
+    }
+
+    .bet-aside__type {
+      display: block;
+      margin-bottom: 2px;
+
+      font-size: 11px;
+      opacity: 0.5;
+    }
+
+    // .bet-aside__pay {
+    //   text-align: right;
+    //   background-color: var(--bet-aside-pay-bg-color);
+    //   border-radius: 4px;
+    //   border: none;
+    //   font-family: Roboto;
+    //   font-style: normal;
+    //   padding: 3px 12px 3px 9px;
+    //   font-size: 14px;
+    //   line-height: 16px;
+    // }
+  }
+}

@@ -1,0 +1,53 @@
+.nav_container {
+  display: flex;
+  border-top: solid 1px var(--authorize-form-bg);
+  border-left: solid 1px var(--authorize-form-bg);
+  height: 40px;
+  overflow: hidden;
+  width: 100%;
+  .default_style_elem {
+    padding: 12px 25px;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 120px;
+    flex-shrink: 0;
+    border-right: solid 1px var(--authorize-form-bg);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: flex-start;
+    .navCreate_icon_element {
+      padding-right: 10px;
+
+      margin-left: -15px;
+    }
+    &.active {
+      background-color: var(--search-active-bg-color);
+    }
+  }
+}
+.navCreate_drpdown_button {
+  width: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px var(--authorize-form-bg);
+  border-left: solid 1px var(--authorize-form-bg);
+  position: relative;
+  .navCreate_drpdown_container {
+    width: 172px;
+
+    position: absolute;
+    background: var(--authorize-bottom-sub-text-color);
+    z-index: 1;
+    top: 39px;
+    right: 0px;
+    padding: 10px 20px;
+    .navCreate_drpdown_text {
+      padding-bottom: 20px;
+      opacity: 0.5;
+      font-size: 12px;
+    }
+  }
+}

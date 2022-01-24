@@ -1,0 +1,210 @@
+@media screen and (max-width: 767px) {
+  .bet-advice {
+    position: absolute;
+    bottom: 210px;
+
+    padding: 20px;
+  }
+
+  .bet-advice__text {
+    max-width: 190px;
+  }
+
+  .bet-advice__button {
+    button {
+      width: 160px;
+    }
+  }
+  .bets__history.closed {
+    .bet-history__titles {
+      display: none;
+    }
+
+    .bet-history__line {
+      display: none;
+    }
+
+    .bet-history__total {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-cashout {
+    width: auto;
+    height: auto;
+
+    background: none;
+  }
+  .bets__history.closed {
+    .bet-history__titles {
+      display: none;
+    }
+
+    .bet-history__line {
+      display: none;
+    }
+
+    .bet-history__total {
+      display: none;
+    }
+  }
+  .bet__header {
+    padding: 0;
+
+    font-size: 14px;
+  }
+
+  .bet__description {
+    padding: 0;
+
+    font-size: 11px;
+  }
+
+  .bet__condition {
+    padding: 0;
+
+    font-size: 11px;
+  }
+
+  .bet__background {
+    left: -115px;
+
+    margin: 0;
+  }
+
+  .bet__close {
+    top: 18px;
+    left: 0;
+  }
+
+  .bet__ordinar {
+    position: relative;
+    margin-top: 4px;
+    padding: 10px 10px 10px 10px;
+    background: var(--authorize-bottom-sub-text-color);
+    border-radius: 5px;
+
+    &.new {
+      position: relative;
+      margin-top: 5px;
+      padding: 10px;
+      background-color: var(--ticket-editing);
+
+      &:first-of-type {
+        margin-top: 20px;
+      }
+
+      .bet__description {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .history {
+    .bet__header {
+      padding-right: 0;
+    }
+
+    .bet__description {
+      padding-right: 0;
+    }
+
+    .bet__condition {
+      padding-right: 0;
+    }
+  }
+  .history {
+    .bet-service__statistic {
+      top: 0;
+      right: 0;
+    }
+  }
+  .bet-history {
+    width: 293px;
+  }
+
+  .bet-history__header {
+    padding-left: 98px;
+
+    font-size: 14px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .bet-history__title {
+    width: 75px;
+    margin-left: 5px;
+
+    font-size: 11px;
+  }
+
+  .bet-history__line {
+    font-size: 11px;
+  }
+
+  .bet-history__total {
+    font-size: 11px;
+  }
+
+  .bet-history__left {
+    flex-shrink: 0;
+  }
+
+  .bet-history__money {
+    width: 75px;
+    margin-left: 5px;
+  }
+
+  .history {
+    .bet-history {
+      padding-right: 0;
+    }
+  }
+  .bet-aside {
+    display: flex;
+    border: none;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bet-aside__type {
+    display: none;
+  }
+
+  .bet-aside__pay {
+    margin-top: 0;
+  }
+
+  .bet-aside__bet {
+    margin-right: 5px;
+  }
+
+  .bet-aside__money {
+    input {
+      font-size: 14px;
+    }
+  }
+
+  .bet-aside__numbers {
+    width: 80px;
+    font-size: 14px;
+  }
+
+  .history {
+    .bet-aside {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bets-window {
+    top: 0;
+    z-index: 99999;
+  }
+}

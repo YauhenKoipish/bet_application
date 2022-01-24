@@ -1,0 +1,99 @@
+.cap {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  font-size: 14px;
+}
+
+.bets-window {
+  .cap {
+    background-color: var(--right-component-coupon-header-item-color);
+  }
+  .bets-window__title {
+    .itm {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .bets-window {
+    .cap {
+      background-color: var(--coupon-bg-sml);
+    }
+    .bets-window__titles {
+      background-color: var(--coupon-bg-sml-title);
+
+      align-items: center;
+      border-bottom: 1px solid var(--coupon-bg-sml-title-border-bottom);
+      .bets-window__title.setting {
+        // background: red;
+        svg {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          // z-index: 9999999;
+        }
+      }
+      .bets-window__title {
+        height: 22px;
+        width: 40%;
+        flex-shrink: 0;
+
+        background-color: var(--coupon-bg-sml-title);
+        color: var(--coupon-title-text-not-active);
+
+        border-right: 1px solid var(--coupon-bg-sml-title-border);
+        &:active {
+          color: var(--coupon-title-text-active);
+        }
+
+        .itm.active {
+          display: flex;
+          width: 86px;
+          span {
+            font-family: Roboto;
+            font-style: normal;
+
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--bets-window-tittle-coupon-color);
+          }
+          .coupon-open__quantity {
+            margin-left: 6px;
+            color: var(--coupon-sml-text-color);
+          }
+          &:nth-child(2) {
+            margin-left: 12px;
+          }
+        }
+        .itm.mrg-r {
+          margin-left: -5px;
+          font-family: Roboto;
+          font-style: normal;
+
+          font-size: 14px;
+          line-height: 16px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: var(--bets-window-tittle-current-bets-color);
+        }
+
+        &:nth-child(3) {
+          border: none;
+          width: 21%;
+        }
+      }
+    }
+    .settings {
+      color: var(--bets-window-seting-text-color);
+      background-color: var(--bets-window-seting-bg-color);
+    }
+  }
+}

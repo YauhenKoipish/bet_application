@@ -1,0 +1,85 @@
+.coupon-open {
+  position: fixed;
+  bottom: 0px;
+  right: 50%;
+  transform: translate(50%, 0);
+  z-index: 2;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 9px 9px 0 0;
+  background-color: var(--button-sml-size-betSlip);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 93%;
+  height: 42px;
+  justify-content: center;
+  .itm {
+    width: 40%;
+    display: flex;
+    flex-shrink: 0;
+    position: relative;
+    color: var(--button-sml-size-color-text);
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 1px solid var(--button-sml-color-border);
+    height: 22px;
+    justify-content: center;
+    span {
+      position: relative;
+    }
+    &:first-child {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  // .itm:first-child {
+  // }
+  .itm:nth-child(3) {
+    width: 18%;
+    .itmIconContainer {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.jsf-bet {
+  justify-content: space-between;
+}
+.coupon-open__main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 26px;
+  height: 38px;
+
+  background: transparent url("../img/coupon.svg") no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.coupon-open__quantity {
+  // position: absolute;
+  top: 0px;
+  right: -25px;
+
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+
+  border-radius: 50%;
+  background-color: var(--button-sml-size-color-circle);
+  margin-left: 5px;
+}

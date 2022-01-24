@@ -1,0 +1,48 @@
+.bets-window {
+  position: fixed;
+  top: 120px;
+  z-index: 2;
+
+  width: 100%;
+  min-height: 100%;
+}
+
+.bets-window__titles {
+  display: flex;
+  height: 42px;
+
+  background-color: var(--coupon-title-color);
+  border-top: 1px solid var(--right-component-coupon-header-item-color);
+}
+
+.bets-window__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+
+  background-color: var(--bets-window-title-bg);
+  // border-right: 1px solid var(--right-component-coupon-header-item-color);
+
+  &.active {
+    color: var(--color-text-white);
+
+    background-color: var(--bets-window-title-active-bg);
+  }
+}
+.bets-window__title.setting {
+  // background: red;
+}
+
+.bets-window__close {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}

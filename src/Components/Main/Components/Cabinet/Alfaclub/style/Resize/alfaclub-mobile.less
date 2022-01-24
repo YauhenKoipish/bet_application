@@ -1,0 +1,501 @@
+@media screen and (max-width: 599px) {
+  @keyframes grow {
+    from {
+      width: 125px;
+      height: 200px;
+
+      opacity: 0.5;
+    }
+
+    to {
+      width: 187px;
+      height: 300px;
+
+      opacity: 1;
+    }
+  }
+
+  @keyframes shrink {
+    from {
+      width: 187px;
+      height: 300px;
+
+      opacity: 1;
+    }
+
+    to {
+      width: 125px;
+      height: 200px;
+
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes moveUp {
+    0% {
+      top: 58%;
+      left: -84px;
+
+      width: 200px;
+
+      font-size: 18px;
+    }
+
+    100% {
+      top: 48%;
+      left: -82px;
+
+      width: 218px;
+
+      font-size: 28px;
+    }
+  }
+
+  @keyframes moveDown {
+    0% {
+      top: 48%;
+      left: -82px;
+
+      width: 218px;
+
+      font-size: 28px;
+    }
+
+    100% {
+      top: 58%;
+      left: -84px;
+
+      width: 200px;
+
+      font-size: 18px;
+    }
+  }
+
+  @keyframes resizeToBig {
+    0% {
+      top: 0%;
+      left: 28%;
+
+      width: 10px;
+      height: 15px;
+    }
+
+    100% {
+      top: -20%;
+      left: 15%;
+
+      width: 15px;
+      height: 23px;
+    }
+  }
+
+  @keyframes resizeToSmall {
+    0% {
+      top: -20%;
+      left: 15%;
+
+      width: 15px;
+      height: 23px;
+    }
+
+    100% {
+      top: 0%;
+      left: 28%;
+
+      width: 10px;
+      height: 15px;
+    }
+  }
+
+  @keyframes pointsToBig {
+    0% {
+      top: 4px;
+      left: -16px;
+
+      width: 12px;
+      height: 12px;
+    }
+
+    100% {
+      top: 6px;
+      left: -23px;
+
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @keyframes pointsToSmall {
+    0% {
+      top: 6px;
+      left: -23px;
+
+      width: 18px;
+      height: 18px;
+    }
+
+    100% {
+      top: 4px;
+      left: -16px;
+
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .alfa-club__title {
+    br {
+      display: inline;
+    }
+  }
+
+  .alfa-club__item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    width: 125px;
+    height: 200px;
+    margin-left: 60px;
+    flex-shrink: 0;
+
+    opacity: 0.5;
+
+    &.reduce-img {
+      animation: shrink 0.5s ease-in-out;
+
+      .alfa-club__status {
+        top: 58%;
+        left: -84px;
+
+        width: 200px;
+
+        font-size: 18px;
+
+        animation: moveDown 0.5s ease-in-out;
+      }
+
+      .alfa-club__points {
+        &::before {
+          top: 4px;
+          left: -16px;
+
+          width: 12px;
+          height: 12px;
+
+          animation: pointsToSmall 0.5s ease-in-out;
+        }
+      }
+
+      &.locked {
+        .alfa-club__points {
+          display: block;
+          margin-left: auto;
+          width: 22px;
+          height: 15px;
+
+          &::before {
+            top: 0%;
+            left: 28%;
+
+            width: 10px;
+            height: 15px;
+
+            animation: resizeToSmall 0.5s ease-in-out;
+          }
+        }
+      }
+
+      &.passed {
+        .alfa-club__points {
+          display: block;
+          margin-left: auto;
+          width: 22px;
+          height: 15px;
+
+          &::before {
+            top: 0%;
+            left: 28%;
+
+            width: 10px;
+            height: 15px;
+
+            animation: resizeToSmall 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+
+    &.start-size {
+      width: 187px;
+      height: 300px;
+
+      opacity: 1;
+
+      .alfa-club__status {
+        top: 48%;
+        left: -73px;
+
+        width: 218px;
+
+        font-size: 28px;
+      }
+
+      .alfa-club__points {
+        &::before {
+          top: 6px;
+          left: -23px;
+
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    &.active {
+      width: 187px;
+      height: 300px;
+
+      opacity: 1;
+
+      animation: grow 0.5s ease-in-out;
+
+      .alfa-club__status {
+        top: 48%;
+        left: -82px;
+
+        width: 218px;
+
+        font-size: 28px;
+
+        animation: moveUp 0.5s ease-in-out;
+      }
+
+      .alfa-club__points {
+        &::before {
+          top: 6px;
+          left: -23px;
+
+          width: 18px;
+          height: 18px;
+
+          animation: pointsToBig 0.5s ease-in-out;
+        }
+      }
+    }
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &.locked {
+      .alfa-club__points {
+        display: block;
+        margin-left: auto;
+        width: 22px;
+        height: 15px;
+
+        &::before {
+          top: 0%;
+          left: 28%;
+
+          width: 10px;
+          height: 15px;
+        }
+      }
+    }
+
+    &.passed {
+      .alfa-club__points {
+        display: block;
+        margin-left: auto;
+        width: 22px;
+        height: 15px;
+
+        &::before {
+          top: 0%;
+          left: 28%;
+
+          width: 10px;
+          height: 15px;
+        }
+      }
+    }
+
+    &.active.locked {
+      .alfa-club__points {
+        display: block;
+        margin-left: auto;
+        width: 29px;
+        height: 20px;
+
+        &::before {
+          top: -20%;
+          left: 15%;
+
+          width: 15px;
+          height: 23px;
+
+          animation: resizeToBig 0.5s ease-in-out;
+        }
+      }
+    }
+
+    &.active.passed {
+      .alfa-club__points {
+        display: block;
+        margin-left: auto;
+        width: 29px;
+        height: 20px;
+
+        &::before {
+          top: -20%;
+          left: 15%;
+
+          width: 15px;
+          height: 23px;
+
+          animation: resizeToBig 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .alfa-club__status {
+    position: absolute;
+    top: 58%;
+    left: -84px;
+
+    width: 200px;
+    min-height: 40px;
+
+    font-size: 18px;
+    font-family: "PfDin", Sans-serif;
+    text-align: right;
+
+    transform: rotate(-90deg);
+  }
+
+  .alfa-club__points {
+    position: relative;
+
+    //text-align: right;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -16px;
+
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .alfa-club__slider {
+    height: 300px;
+    margin-left: -93.5px;
+  }
+
+  .alfa-club__toggle-left,
+  .alfa-club__toggle-right {
+    top: 28px;
+
+    height: 250px;
+
+    &::before {
+      width: 8px;
+      height: 15px;
+
+      background-size: contain;
+    }
+  }
+
+  .alfa-club__toggle-left {
+    left: 56px;
+  }
+
+  .alfa-club__toggle-right {
+    right: 54px;
+  }
+
+  .alfa-club__top {
+    padding-top: 300px;
+  }
+
+  .alfa-club__legend {
+    margin-top: 60px;
+
+    &::after {
+      width: 334px;
+      margin-left: -167px;
+    }
+  }
+  .terms--first {
+    &::after {
+      width: 334px;
+      margin-left: -167px;
+    }
+  }
+
+  .terms--first::after {
+    width: 334px;
+    margin-left: -167px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .terms--first::after {
+    width: 320px;
+    margin-left: -160px;
+  }
+  .alfa-club__title {
+    br {
+      display: inline;
+    }
+  }
+
+  .alfa-club__slider {
+    height: 300px;
+
+    transform: translateX(-10%);
+  }
+
+  .alfa-club__toggle-left {
+    left: 12px;
+  }
+
+  .alfa-club__toggle-right {
+    right: 10px;
+  }
+
+  .alfa-club__top {
+    padding-top: 300px;
+  }
+
+  .alfa-club__legend {
+    margin-top: 60px;
+
+    &::after {
+      width: 334px;
+      margin-left: -167px;
+    }
+  }
+
+  .terms--first::after {
+    width: 334px;
+    margin-left: -167px;
+  }
+
+  .alfa-club__title {
+    font-size: 36px;
+  }
+
+  .alfa-club__motto {
+    font-size: 18px;
+  }
+
+  .alfa-club__header {
+    padding-top: 20px;
+  }
+}

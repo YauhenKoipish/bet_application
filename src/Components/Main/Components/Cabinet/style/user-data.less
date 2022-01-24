@@ -1,0 +1,188 @@
+.user-data__personal {
+  padding: 0 19px;
+  padding-top: 22px;
+  // margin-top: 22px 19px;
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid var(--mybets-profil-border-personal-info-change-psw);
+}
+
+.user-data__info {
+  margin-bottom: 16px;
+  display: flex;
+
+  &:last-of-type {
+    margin-bottom: 25px;
+  }
+}
+
+.user-data__type {
+  font-size: 11px;
+  padding-left: 26px;
+  opacity: 0.5;
+}
+
+.user-data__data {
+  margin-top: 4px;
+  padding-left: 15px;
+
+  font-size: 14px;
+  // &.before_phone:before {
+  //   top: -15px;
+  // }
+  // &.before_mail:before {
+  //   top: -17px;
+  // }
+}
+
+.user-data__password {
+  padding: 20px;
+}
+
+.user-data__field-set {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-direction: column;
+  .area_psw {
+    display: flex;
+    flex-direction: column;
+    .txt {
+      margin-bottom: 21px;
+    }
+    button {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      border: 1px solid var(--change-password-button-border-color);
+      box-sizing: border-box;
+      border-radius: 4px;
+      background: none;
+      color: var(--change-password-button-bg-color);
+      width: 280px;
+      height: 42px;
+    }
+  }
+}
+
+.user-data__field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  input {
+    width: 280px;
+    height: 42px;
+
+    font-family: "Roboto", sans-serif;
+    color: var(--color-text-white);
+    font-size: 14px;
+
+    background-color: #545c6f;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  &.error {
+    input {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--color-text-white);
+
+      border: 1px solid var(--error-color-red);
+    }
+
+    .user-data__additional-info {
+      color: var(--error-color-red);
+    }
+  }
+}
+
+.user-data__visibility {
+  position: absolute;
+  top: 15px;
+  right: 0;
+
+  width: 20px;
+  height: 20px;
+
+  background: url("../img/invisible.svg") no-repeat center;
+
+  &.visible {
+    background: url("../img/visible.svg") no-repeat center;
+  }
+}
+
+.user-data__additional-info {
+  // text-align: right;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+}
+
+.user-data__button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  button {
+    width: 210px;
+    height: 40px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-text-white);
+  }
+}
+
+.user-data-phone-icon {
+  margin-top: 1px;
+  height: 20px;
+  width: 20px;
+}
+.user-data-mail-icon {
+  margin-top: 1px;
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .user-data__personal {
+    flex-direction: row;
+  }
+
+  .user-data__info {
+    margin-bottom: 0;
+    margin-right: 40px;
+    display: flex;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .user-data__password {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-data__field-set {
+    justify-content: flex-start;
+  }
+
+  .user-data__field {
+    margin-right: 80px;
+
+    &:last-of-type {
+      margin-right: 80px;
+    }
+  }
+}

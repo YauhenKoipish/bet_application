@@ -1,0 +1,86 @@
+// case 1
+//[] - new Map()
+
+{
+  "sports": [
+    {
+      "name": string,
+      "sportId": any
+    }
+  ],
+  "catigories": [
+    {
+      "id": any,
+      "sportId": any,
+      "sortId": any,
+      "name": string
+    }
+  ],
+  "tournaments": [
+    {
+      "id": any,
+      "seasonId": any,
+      "sportId": any,
+      "catigoryId": any,
+      "name": any,
+      "sortId": any
+    }
+  ],
+  "markets": []
+}
+
+//case 2  могу что-то упустить но с ходу вот что вижу 
+//event 
+// [] = new Map()
+
+{
+    event:{
+        "catigoryId":any,
+        "seasonName":string,
+        "id":any,
+        "timeSpanStart":number | string,
+        "isLongTerm" ?: boolean,
+        "homename":string,
+        "awayName":string,
+        "sportId":any,
+        "catigoryId":any,
+        "tournamentId":any,
+        "videoProviderId": any, // на некоторых event есть виджеты которые у нас были вместо трансляций по этому полю определяли такие события виджеты тянулись с другой апи 
+        "periodLength": any,
+        "overtimeLength": any,
+        "state": number, // открытое заблокированное приостановленное
+        "homeScore":number | any,
+        "awayScore":number | any,
+        "setScores":number | any,
+        "matchTime":number | any,
+        "matchStatus":number | any,
+        "homeRedcards":number,
+        "homeYellowcards":number,
+        "awayRedcards":number,
+        "awayYellowcards":number,
+        "line":[
+            {
+                "id":any,
+                "sportId":any,
+                "marketId":any,
+                "state":any, // block active stopped
+                "name":any,
+                "outcomeNumber":any,
+                "outcomeId":Array<strng | number>,
+                "outcomeActive":Array<strng | number>,
+                "outcomeName":Array<strng | number>,
+                "outcomeTeam":Array<strng | number>,
+                "outcomeOdds":Array<strng | number>,
+                "[key:string]"?:any
+                // могут добавиться поля в зависимости от спорта 
+            }
+        ]
+        "[key:string]"?:any
+        // могут добавиться поля в зависимости от спорта 
+    }
+}
+
+
+
+//case 3 
+// auth  я думаю ответы мы если что проработаем лично уже 

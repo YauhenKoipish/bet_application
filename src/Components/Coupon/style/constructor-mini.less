@@ -1,0 +1,260 @@
+.constructor-mini {
+  width: 100%;
+  cursor: auto;
+
+  .coupon-item__total {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.constructor-mini__item {
+  position: relative;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid var(--coupon-bg);
+
+  &.pause {
+    .constructor-mini__block {
+      display: block;
+    }
+  }
+
+  .history__max {
+    bottom: -16px;
+
+    opacity: 1;
+    display: block;
+  }
+
+  .line__coef {
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+
+    border-right: 0;
+  }
+}
+
+.constructor-mini__header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 0;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.constructor-mini__close {
+  position: absolute;
+  top: -10px;
+  left: -26px;
+  z-index: 1;
+
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  cursor: pointer;
+}
+
+.constructor-mini__type {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.constructor-mini__coef {
+  position: relative;
+
+  margin-left: auto;
+
+  font-weight: 500;
+
+  &.arrow_green {
+    &::before {
+      content: " ";
+      position: absolute;
+      right: -5px;
+      top: 0;
+
+      border: 4px solid transparent;
+      border-top: 4px solid #86d46a;
+      border-right: 4px solid #86d46a;
+    }
+  }
+
+  &.arrow_red {
+    position: relative;
+    &::before {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      right: -5px;
+
+      border: 4px solid transparent;
+      border-bottom: 4px solid var(--error-color-red);
+      border-right: 4px solid var(--error-color-red);
+    }
+  }
+}
+
+.constructor-mini__name {
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: 10px;
+
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.constructor-mini__bet {
+  position: relative;
+
+  padding: 0 22px;
+  padding-top: 20px;
+  display: flex;
+
+  .constructor__dot {
+    align-self: flex-start;
+    flex-shrink: 0;
+    margin-top: 4px;
+    margin-right: 14px;
+  }
+
+  //&::before {
+  //	content: '';
+  //	position: absolute;
+  //	top: 0;
+  //	left: 24px;
+  //
+  //	width: 1px;
+  //	height: 50%;
+  //
+  //	background-color: var(--color-text-white);
+  //}
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 24px;
+
+    width: 1px;
+    height: 100%;
+
+    // background-color: var(--color-text-white);
+    // background-color:
+    background-image: linear-gradient(
+      0deg,
+      var(--mybets-lines-gradient) 0%,
+      var(--mybets-lines-gradient-bg) 50%,
+      transparent 50%,
+      transparent 100%
+    );
+    background-size: 1px 7px;
+    background-color: transparent;
+  }
+
+  &:first-of-type {
+    &::before {
+      height: 0;
+    }
+  }
+
+  &:last-of-type {
+    &::after {
+      height: 0;
+    }
+  }
+}
+
+.constructor-mini__info {
+  font-size: 11px;
+}
+
+.constructor-mini__full {
+  max-width: 130px;
+}
+
+.constructor-mini__description {
+  margin-top: 5px;
+
+  opacity: 0.5;
+}
+
+.constructor-mini__money {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .login__label {
+    width: 80px;
+    margin-bottom: 0;
+
+    &:nth-of-type(2) {
+      text-align: right;
+    }
+
+    input {
+      width: 80px;
+    }
+
+    span {
+      display: block;
+      margin-top: 3px;
+
+      font-size: 14px;
+      opacity: 1;
+      color: var(--color-text-white);
+      font-weight: 500;
+    }
+  }
+}
+
+.constructor-mini__button {
+  width: 100%;
+
+  div {
+    width: 210px;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 12px;
+
+    text-align: center;
+
+    background-color: red;
+    //border-radius: 3px;
+    cursor: pointer;
+  }
+}
+
+.constructor-mini__block {
+  position: absolute;
+  top: 0;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(148, 164, 250, 0.9);
+
+  .constructor-mini__close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.constructor-mini__text {
+  width: 182px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  text-align: center;
+}

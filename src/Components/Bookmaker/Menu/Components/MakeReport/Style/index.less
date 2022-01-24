@@ -1,0 +1,64 @@
+.left_slide_desk_MakeReport_container {
+  flex-direction: column;
+  padding: 0 30px;
+  min-width: 230px;
+
+  .left_slide_desk_MakeReport_checkbox_container {
+    .left_slide_desk_MakeReport_checkbox_container_element {
+      align-items: center;
+      &:last-child {
+        padding-left: 30px;
+      }
+      .left_slide_desk_MakeReport_checkbox_container_text {
+        opacity: 0.5;
+      }
+      .left_slide_desk_MakeReport_checkbox {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+.left_slide_desk_MakeReport_checkbox {
+  background: none;
+  color: white;
+  height: auto;
+  width: auto;
+  padding: 0 0 0 0;
+  margin-left: 6px;
+}
+.left_slide_desk_MakeReport_input_container {
+  border-bottom: solid 1px white;
+  margin-bottom: 17px;
+  position: relative;
+  .left_slide_desk_MakeReport_input {
+    position: relative;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    height: 17px;
+
+    padding: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    & ~ span {
+      position: absolute;
+      z-index: 1;
+      left: 0px;
+      display: none;
+      top: 0px;
+    }
+    &:focus {
+      & ~ span {
+        display: none;
+      }
+    }
+    &:placeholder-shown {
+      & ~ span {
+        display: block;
+        opacity: 0.5;
+      }
+    }
+  }
+}

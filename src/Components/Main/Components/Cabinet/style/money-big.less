@@ -1,0 +1,106 @@
+.money-big {
+  display: flex;
+  flex-direction: column;
+}
+
+.money-big__titles {
+  display: flex;
+  height: 30px;
+
+  background-color: var(--rightComponentCouponHeaderItems-color);
+}
+
+.money-big__title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  &:first-of-type {
+    width: 18%;
+  }
+
+  &:nth-of-type(2) {
+    width: 100%;
+    flex-shrink: 5 !important;
+  }
+
+  &:nth-of-type(3) {
+    width: 16%;
+  }
+
+  &:nth-of-type(4) {
+    width: 12%;
+  }
+
+  &:nth-of-type(5) {
+    width: 16%;
+  }
+
+  &:last-of-type {
+    width: 14%;
+  }
+}
+
+.money-big__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.money-big__row {
+  display: flex;
+
+  border-bottom: 1px solid var(--right-component-coupon-ordinar-border-color);
+}
+
+.money-big__cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  flex-shrink: 0;
+
+  border-right: 1px solid var(--right-component-coupon-ordinar-border-color);
+
+  &:first-of-type {
+    width: 18%;
+
+    opacity: 0.5;
+  }
+
+  &:nth-of-type(2) {
+    width: 100%;
+    flex-shrink: 5 !important;
+  }
+
+  &:nth-of-type(3) {
+    width: 16%;
+  }
+
+  &:nth-of-type(4) {
+    width: 12%;
+  }
+
+  &:nth-of-type(5) {
+    width: 16%;
+  }
+
+  &:last-of-type {
+    width: 14%;
+  }
+
+  &.good {
+    color: #4b9a72;
+  }
+
+  &.bad {
+    color: #e57373;
+  }
+
+  &.cancel {
+    color: #d5c751;
+    text-decoration: underline;
+  }
+}

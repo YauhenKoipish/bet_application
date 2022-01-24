@@ -1,0 +1,116 @@
+.bet-service {
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  margin-left: auto;
+  display: flex;
+}
+
+.bet-service__icons {
+  position: relative;
+  right: -18px;
+  width: 60px;
+  top: 5px;
+  margin-left: auto;
+}
+
+.bet-service__edited {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 10px;
+  height: 10px;
+
+  // background: url("../img/edited.svg") no-repeat center;
+  transform: translateY(-50%);
+}
+
+.bet-service__cashout {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+
+  width: 10px;
+  height: 10px;
+
+  background: url("../img/cashout.svg") no-repeat center;
+  transform: translateY(-50%);
+}
+
+.bet-service__statistic {
+  position: absolute;
+  top: 0;
+  left: 35px;
+
+  width: 20px;
+  height: 20px;
+
+  // background: url("../img/statistic.svg") no-repeat center;
+}
+
+.bet-service__open {
+  // width: 20px;
+  // height: 20px;
+  position: relative;
+  // left: 0px;
+  top: 6px;
+  width: 12px;
+  // padding: 10px;
+  // top: 20px;
+  //margin-top: -5px;
+
+  // background: url("../img/arrow.svg") no-repeat center;
+}
+
+.bet-service__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 12px;
+  margin-left: auto;
+  top: 4px;
+}
+
+.bet-service__main-button {
+  position: relative;
+  z-index: 2;
+  right: 22px;
+  font-size: 11px;
+  color: var(--mybets-bets-edit-text-color);
+  min-width: 70px;
+  height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: var(--mybets-bets-edit-bg);
+  border-radius: 11px;
+  top: 4px;
+  right: -19px;
+}
+
+.history {
+  .bet-service {
+    top: 50px;
+  }
+
+  .bet-service__statistic {
+    top: 30px;
+    left: auto;
+    right: -85px;
+  }
+}
+.user-account__main {
+  .bet-service__main-button {
+    right: 230px;
+    top: 49px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .user-account__main {
+    .bet-service__main-button {
+      right: -27px;
+      top: 0px;
+    }
+  }
+}

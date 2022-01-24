@@ -1,0 +1,153 @@
+.calendar__date {
+  position: relative;
+
+  display: inline;
+
+  opacity: 0.5;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -16px;
+
+    width: 3px;
+    height: 6px;
+
+    background: url("../img/arrow.svg") no-repeat center;
+    background-size: contain;
+
+    transform: translateY(-50%) rotate(-90deg);
+  }
+}
+
+.calendar__modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 290px;
+  //height: 300px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--default);
+  box-shadow: 0px 2px 10px #253030;
+  .calendar__month {
+    display: flex;
+
+    padding: 10p;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0%);
+    width: 30%;
+    justify-content: space-between;
+    button {
+      padding: 5px;
+      background: none;
+      color: white;
+    }
+  }
+}
+
+.calendar__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-bottom: 20px;
+
+  font-size: 11px;
+}
+
+.calendar__toggle {
+  width: 20px;
+  height: 20px;
+  margin-top: -5px;
+
+  background: url("../img/arrow.svg") no-repeat center;
+
+  &:first-of-type {
+    //transform: rotate(90deg);
+  }
+
+  &:last-of-type {
+    transform: rotate(180deg);
+  }
+}
+
+.calendar__day {
+  display: flex;
+  padding: 0 16px;
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid #61a8ab;
+
+  div {
+    width: 26px;
+    margin-right: 12px;
+
+    text-align: center;
+    font-size: 11px;
+
+    &:nth-of-type(7n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.calendar__body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 16px;
+  padding-top: 10px;
+
+  div {
+    width: 25px;
+    height: 25px;
+    margin-right: 13px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+
+    &.passed {
+      color: var(--color-text-white);
+    }
+
+    &.active {
+      font-weight: 500;
+      color: var(--color-text-white);
+    }
+
+    &.chosen {
+      font-weight: 500;
+      color: var(--color-text-white);
+
+      border: 1px solid var(--color-text-white);
+      border-radius: 50%;
+    }
+
+    &:nth-of-type(7n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .calendar {
+    position: relative;
+  }
+
+  .calendar__modal {
+    top: 0;
+    right: 0;
+  }
+}

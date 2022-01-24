@@ -1,0 +1,40 @@
+.right_to_left {
+  animation: right_to_left 0.3s ease-in forwards;
+}
+
+@keyframes right_to_left {
+  0% {
+    top: 0;
+    left: 0%;
+  }
+  100% {
+    top: 0;
+    left: -200%;
+  }
+}
+.left_to_right {
+  animation: left_to_right 0.3s ease-in forwards;
+}
+
+@keyframes left_to_right {
+  0% {
+    top: 0;
+    left: -200%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+.top_fixed_bottom {
+  animation: top_bottom 0.3s ease-in forwards;
+}
+
+@keyframes top_bottom {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}

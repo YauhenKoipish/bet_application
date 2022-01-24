@@ -1,0 +1,262 @@
+.right_bar .tab .constructor-mini {
+  width: 100%;
+
+  background-color: #0c1855;
+  cursor: auto;
+}
+
+.constructor-mini__item {
+  position: relative;
+
+  background-color: var(--constructor-mini-bg-color);
+
+  &.pause {
+    .constructor-mini__block {
+      display: block;
+    }
+  }
+
+  .history__max {
+    bottom: -16px;
+
+    opacity: 1;
+    display: block;
+  }
+}
+
+.constructor-mini__header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.constructor-mini__close {
+  position: relative;
+  z-index: 1;
+
+  width: 20px;
+  height: 20px;
+  margin-top: -2px;
+  margin-right: 5px;
+  margin-left: -5px;
+
+  background: url("../../img/close.svg") no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.constructor-mini__type {
+  font-family: Roboto;
+  font-style: normal;
+
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  span {
+    right: 0px;
+    width: 19px;
+    height: 19px;
+    right: -30px;
+    background: var(--mybets-color-counter-events-ticket);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.constructor-mini__coef {
+  position: relative;
+
+  margin-left: auto;
+  color: var(--color-other-coef);
+  font-weight: 500;
+
+  &.arrow_green {
+    &::before {
+      content: " ";
+      position: absolute;
+      right: -5px;
+      top: 0;
+
+      border: 4px solid transparent;
+      border-top: 4px solid #86d46a;
+      border-right: 4px solid #86d46a;
+    }
+  }
+
+  &.arrow_red {
+    position: relative;
+    &::before {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      right: -5px;
+
+      border: 4px solid transparent;
+      border-bottom: 4px solid var(--error-color-red);
+      border-right: 4px solid var(--error-color-red);
+    }
+  }
+}
+
+.constructor-mini__name {
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: 10px;
+  padding-left: 20px;
+
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.constructor-mini__bet {
+  position: relative;
+
+  padding: 0 22px;
+  padding-top: 20px;
+  display: flex;
+
+  .constructor__dot {
+    align-self: flex-start;
+    flex-shrink: 0;
+    margin-top: 4px;
+    margin-right: 14px;
+  }
+
+  //&::before {
+  //	content: '';
+  //	position: absolute;
+  //	top: 0;
+  //	left: 24px;
+  //
+  //	width: 1px;
+  //	height: 50%;
+  //
+  //	background-color: var(--color-text-white);
+  //}
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 24px;
+
+    width: 1px;
+    height: 100%;
+
+    // background-color: var(--color-text-white);
+  }
+
+  &:first-of-type {
+    &::before {
+      height: 0;
+    }
+  }
+
+  &:last-of-type {
+    &::after {
+      height: 0;
+    }
+  }
+}
+
+.constructor-mini__info {
+  font-size: 11px;
+}
+
+.constructor-mini__full {
+  max-width: 130px;
+}
+
+.constructor-mini__description {
+  margin-top: 5px;
+  color: var(--color-other-coef);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+
+  opacity: 1;
+}
+
+.constructor-mini__money {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .login__label {
+    width: 80px;
+    margin-bottom: 0;
+
+    &:nth-of-type(2) {
+      text-align: right;
+    }
+
+    input {
+      width: 80px;
+    }
+
+    span {
+      display: block;
+      margin-top: 3px;
+
+      font-size: 14px;
+      opacity: 1;
+      color: var(--color-text-white);
+      font-weight: 500;
+    }
+  }
+}
+
+.constructor-mini__button {
+  width: 100%;
+
+  div {
+    width: 210px;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 12px;
+
+    text-align: center;
+
+    background-color: red;
+    //border-radius: 3px;
+    cursor: pointer;
+  }
+}
+
+.constructor-mini__block {
+  position: absolute;
+  top: 0;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(148, 164, 250, 0.9);
+
+  .constructor-mini__close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.constructor-mini__text {
+  width: 182px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  text-align: center;
+}

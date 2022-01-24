@@ -1,0 +1,74 @@
+// daria
+@media screen and (min-width: 1024px) {
+  .bets-window {
+    & > .bets-window__title {
+      display: none;
+    }
+    .bets__titles {
+      display: none;
+    }
+
+    .bets__item {
+      &.cashout-button {
+        padding-bottom: 85px;
+      }
+
+      &:last-of-type {
+        .bets__modal-cashout {
+          bottom: auto;
+          top: -268px;
+
+          &::before {
+            top: auto;
+            bottom: -4px;
+          }
+        }
+      }
+    }
+
+    .bets__main-row {
+      flex-direction: column;
+    }
+
+    .bets__buttons {
+      bottom: 20px;
+      top: auto;
+      padding: 0 13px;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .bets__data {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+
+    .bets__main-part {
+      margin-right: 0;
+      padding: 0 5px 0 7px;
+      width: 246px;
+    }
+
+    .constructor__top {
+      width: 214px;
+    }
+
+    .constructor-mini__header {
+      padding: 0;
+    }
+
+    .constructor-mini__bet {
+      padding-left: 0;
+    }
+
+    .constructor-mini__bet::after {
+      left: 2px;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .bets-window {
+    top: 70px;
+  }
+}

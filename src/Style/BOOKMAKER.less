@@ -1,0 +1,99 @@
+.remove-padding {
+  padding-right: 0;
+}
+.main-table__sport.open .main-table__line {
+  background: var(--line-content-bg);
+  .input_and_button_main_table_line_container {
+    display: flex;
+    flex-direction: row;
+    .button {
+      margin: 5px 10px 5px 0;
+      min-width: 132px;
+      max-width: 132px;
+    }
+  }
+}
+
+.modal_container_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_modal {
+  padding: 20px;
+  background: var(--about-us-bg-color);
+}
+
+.btn_show_line_markets {
+  display: flex;
+  position: relative;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: var(--authorize-login-bg-checkbox);
+  border-radius: 4px;
+  margin: 5px 10px;
+  min-width: 130px;
+}
+.main-table__sport.open .main-table__line {
+  .container_elements {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal_bg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 5;
+      top: 0;
+      right: 0;
+    }
+    .container {
+      width: 600px;
+      height: 400px;
+      background: var(--authorize-form-bg);
+      z-index: 7;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      align-items: center;
+      .button {
+        padding: 7px;
+        width: 80%;
+        margin-bottom: 20px;
+        max-width: 80%;
+        min-width: 80%;
+
+        div {
+          padding: 0 7px;
+          border-right: 1px solid white;
+
+          &:last-child {
+            padding-right: 0;
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button_modal {
+  display: flex;
+  flex: d;
+  flex-direction: column;
+  // min-height: 100px;
+  .item {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+  }
+}

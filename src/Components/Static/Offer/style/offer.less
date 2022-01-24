@@ -1,0 +1,124 @@
+.offer {
+  flex-grow: 10;
+  padding-top: 30px;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  //background-color: #253030;
+  // background-color: #000000;
+}
+
+.offer__header {
+  position: relative;
+
+  margin-bottom: 30px;
+}
+
+.offer__pics {
+  display: flex;
+  transition: all 0.5s;
+}
+
+.offer__main,
+.offer__body {
+  transition: all 0.5s;
+}
+
+.transition0 {
+  transition: none;
+}
+
+.offer__header {
+  overflow: hidden;
+}
+
+.offer__img {
+  flex-shrink: 0;
+}
+
+.offer__img {
+  width: 100%;
+  height: auto;
+  padding: 0 40px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.offer__toggle-left,
+.offer__toggle-right {
+  position: absolute;
+  top: 50%;
+
+  width: 10px;
+  height: 19px;
+
+  transform: translateY(-50%);
+  background: url("../img/toggle.svg") no-repeat center;
+}
+
+.offer__toggle-left {
+  left: 15px;
+
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.offer__toggle-right {
+  right: 15px;
+}
+
+.offer__body {
+  padding: 0 40px;
+  padding-bottom: 40px;
+
+  p {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.offer__text {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.offer__text--italic {
+  margin-bottom: 10px;
+}
+
+.offer__content {
+  margin-bottom: 40px;
+}
+
+.offer__table {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.offer__column {
+  width: 50%;
+
+  div {
+    margin-top: 20px;
+
+    line-height: 21px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+.offer__list-el {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}

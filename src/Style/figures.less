@@ -1,0 +1,29 @@
+.triangle {
+    position: relative;
+    background-color: orange;
+    text-align: left;
+}
+.triangle:before,
+.triangle:after {
+    content: "";
+    position: absolute;
+    background-color: inherit;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+    width: 12px;
+    height: 6px;
+    border-top-right-radius: 30%;
+}
+
+.triangle {
+    transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+}
+.triangle:before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
+        translate(0, -50%);
+}
+.triangle:after {
+    transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}

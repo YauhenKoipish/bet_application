@@ -1,0 +1,175 @@
+.line-live {
+  //padding-left: 20px;
+  //padding-right: 10px;
+
+  &.open {
+    .line-live__type {
+      display: block;
+    }
+
+    .line-live__arrow {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.line-live__wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  margin-bottom: 2px;
+  padding-left: 25px;
+  padding-right: 10px;
+
+  background-color: red;
+}
+
+.line-live__img {
+  margin-right: 20px;
+}
+
+.line-live__icon {
+  margin-left: auto;
+
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.line-live__arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+
+  img {
+    width: 11px;
+    height: 6px;
+  }
+}
+
+.line-live__league {
+  max-width: 285px;
+  margin-bottom: 20px;
+
+  opacity: 0.5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.line-live__type {
+  display: none;
+  margin-top: 7px;
+  padding-left: 30px;
+  padding-right: 25px;
+}
+
+.line-live__teams {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+.line-live__team-name,
+.line-live__column {
+  div:first-of-type {
+    margin-bottom: 5px;
+  }
+}
+
+.line-live__team-name {
+  min-width: 0;
+
+  div {
+    position: relative;
+
+    padding-left: 15px;
+    margin-left: -15px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &.active {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 50%;
+
+        width: 4px;
+        height: 4px;
+        margin-top: -4px;
+
+        border-radius: 50%;
+        background-color: red;
+      }
+    }
+
+    .red-card {
+      position: absolute;
+      left: 0;
+      top: 50%;
+
+      width: 10px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      padding-left: 1px;
+
+      font-size: 12px;
+
+      border-radius: 2px;
+      background-color: var(--error-color-red);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.line-live__score {
+  display: flex;
+  margin-left: auto;
+}
+
+.line-live__column {
+  margin-left: 10px;
+
+  text-align: right;
+
+  &:first-of-type {
+    font-weight: 500;
+  }
+
+  &.common-color {
+    color: #00a099;
+  }
+}
+
+.line-live__fav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+}

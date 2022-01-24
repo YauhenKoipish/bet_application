@@ -1,0 +1,255 @@
+@import "./baseColors.less";
+@import "./scroll.less";
+:root {
+  --active-bets: @base-7;
+  // --body-bg: @base-1;
+
+  --header-color-bg: @base-1;
+  --header-color-active-nav: @base-4;
+  --header-color-text: @base-3;
+  --header-color-text-active: @base-2;
+  --header-color-active-balance: @base-6;
+
+  --body-bg: @base-1;
+
+  --header-bottom-line-bg: @base-1;
+  --header-bottom-arrow: @base-4;
+  --header-boottom-color-text: @base-3;
+
+  --scroll-sports-slider: @base-1;
+  --scroll-sports-active-sport: @base-4;
+  --scroll-sports-inactive: @base-3;
+  --scroll-sports-active-border: @base-7;
+
+  --title-table-line-bg: @base-2;
+  --title-table-line-text: @base-3;
+  --title-table-line-arrow: @base-2;
+
+  --line-title-bg: @base-8;
+  --lint-title-color-text: @base-3;
+  --line-title-color-sport: @base-4;
+
+  --line-content-bg: @base-2;
+  --line-content-color-text: @base-3;
+  --line-content-color-text-counter-markets: @base-4;
+  --line-content-color-text-data: @base-5;
+  --line-content-color-border-coef: @base-1;
+
+  --line-content-bg-list-coef-active: @base-4;
+  --line-content-bg-list-coef-text-color: @base-2;
+  --line-content-bg-list-coef-open-bg: @base-3;
+  --line-content-bg-list-coef-open-bg-active-coef: @base-4;
+
+  --coupon-bg: @base-2;
+  --coupon-bg-sml: @base-2;
+  --coupon-bg-sml-title: @base-5;
+  --coupon-bg-sml-title-border: @base-2;
+  --coupon-bg-sml-title-border-bottom: @base-2;
+  --coupon-bg-bet-sml: @base-1;
+  --coupon-sml-text-color: @base-3;
+  --coupon-sml-input-bg: @base-8;
+  --coupon-sml-input-text-color: @base-3;
+  --coupon-bg-bet: @base-2;
+  --coupon-bg-bet-sum: @base-5;
+  --coupon-button: @base-4;
+  --coupon-text-button-color: @base-2;
+  --coupon-title-color: @base-2;
+  --coupon-coef-color: @base-4;
+  --coupon-title-text-not-active: @base-8;
+  --coupon-title-text-active: @base-2;
+  --coupon-bet-text-gray: @base-5;
+  --coupon-sum-bg: @base-5;
+  --coupon-sum-title-bg: @base-3;
+  --coupon-sum-title-text-color: @base-11;
+  --coupon-sum-title-text-color-number: @base-2;
+
+  --button-sml-size-betSlip: @base-3;
+  --button-sml-size-color-text: @base-2;
+  --button-sml-size-color-circle: @base-4;
+  --button-sml-color-border: @base-5;
+  --button-sml-color-close: @base-3;
+  --button-other-bg: @base-4;
+
+  --keyboards-number: @base-1;
+  --keyboards-color-border: @base-2;
+
+  --authorize-form-bg: @base-2;
+  --authorize-form-bg-active-tab: @base-8;
+  --authorize-form-bg-tab: @base-2;
+  --authorize-form-color-text-active-tab: @base-3;
+
+  --authorize-login-bg-input: @base-8;
+  --authorize-login-color-text-input: @base-3;
+  --authorize-login-color-text: @base-8;
+  --authorize-login-color-title: @base-3;
+  --authorize-login-bg-button: @base-4;
+  --authorize-login-bg-checkbox-text: @base-3;
+  --authorize-login-bg-checkbox: @base-4;
+  --authorize-login-sub-button-recovery-text: @base-5;
+  --authorize-login-sub-button-border: @base-8;
+  --authorize-registration-border-button-bg: @base-4;
+
+  --authorize-bottom-sub-bg: @base-3;
+  --authorize-bottom-sub-text-color: @base-1;
+
+  --calendar-bg-column: @base-2;
+  --calendar-border: @base-1;
+  --calendar-button-bg: @base-8;
+  --calendar-button-color-text: @base-3;
+  --calendar-color-text-column: @base-3;
+  --calendar-color-text-bg-active: @base-6;
+  --calendar-color-text-active: @base-3;
+
+  --country-bg: @base-2;
+  --country-color-text: @base-8;
+
+  --calendar-bg-svg: @base-2;
+  --color-btn-color-text: @base-2;
+
+  --swither-lang-bg-active: @base-8;
+  --swither-lang-bg-active-not: @base-5;
+  --swither-lang-not-active: @base-1;
+
+  --scroll-background-color: @base-2;
+  --scroll-color: @base-1;
+  --scroll-active-color: @base-5;
+
+  --mybets-title-bg: @base-2;
+  --mybets-title-active: @base-2;
+  --mybets-title-text-not-active: @base-8;
+  --mybets-title-text-active: @base-3;
+  --mybets-filtrs-top: @base-2;
+  --mybets-filtrs-text-color: @base-3;
+  --mybets-filtrs-text-border-color: @base-8;
+  --mybets-bets-edit-bg: @base-8;
+  --mybets-bets-edit-text-color: @base-3;
+  --mybets-bets-button-chash-out: @base-8;
+  --mybets-filters-open-bg: @base-8;
+
+  --mybets-bets-bg: @base-2;
+
+  --mybets-list-dropDown-bg: @base-8;
+  --mybets-list-dropDown-border: @base-2;
+  --mybets-list-dropDown-active: @base-8;
+  --mybets-list-history-active: @base-4;
+  --mybets-list-history-bg: @base-1;
+
+  --mybets-calendar-bg: @base-2;
+  --mybets-calendar-select-day: @base-4;
+  --mybets-calendar-select-day: @base-4;
+  --mybets-color-counter-events-ticket: @base-8;
+  --mybets-lines-gradient: @base-5;
+  --mybets-lines-gradient-bg: @base-2;
+  --mybets-bg-sport: @base-3;
+  --ticket-border: @base-8;
+
+  --error-color-red: @base-9;
+  --color-text-white: @base-3;
+  --color-btn-bg: @base-4;
+  --color-other-coef: @base-4;
+
+  --editing-border: @base-4;
+
+  --ticket-editing: @base-8;
+  --mybets-dropdown-edit-bg: @base-8;
+  --mybets-dropdown-edit-bg-active: @base-8;
+
+  --bg-site: @base-1;
+
+  --registration-color-button-next: @base-5;
+  --registration-color-button-next-bg-notactive: @base-8;
+  --registration-color-button-next-bg-active: @base-4;
+  --registration-name-input-color-text: @base-3;
+
+  --mybets-profil-bg: @base-2;
+  --mybets-profil-border-personal-info-change-psw: @base-1;
+
+  --input-bg: @base-5;
+  --button-bg: @base-4;
+
+  --filters-sports-bg: @base-8;
+  --active-item-menu-bg: @base-8;
+  --footer-bg: @base-1;
+  --filter-time-bg: @base-1;
+
+  --my-account-tittle-bg: @base-1;
+  --green-rose: @base-10;
+
+  --default: @base-9;
+  --right-component-coupon-header-item-color: @base-2;
+  --right-component-coupon-ordinar-color: @base-2;
+  --right-component-coupon-ordinar-border-color: @base-1;
+
+  --painting-item: @base-2;
+
+  --dropdown-color: @base-2;
+
+  --button-accept: @base-1;
+  --bad-modal-bets: @base-5;
+
+  --active-coef-color: @base-5;
+  --active-coef-color-border: @base-2;
+
+  --list-match-categories-bg: @base-2;
+  --list-match-categorise-border-color: @base-1;
+
+  --change-password-button-cansel: @base-4;
+
+  --user-menu-color-active-balance: @base-6;
+
+  --bets-window-title-bg: @base-1;
+  --bets-window-title-active-bg: @base-2;
+  --bets-window-title-border-color: @base-2;
+
+  --form-wrapper-text: @base-11;
+  --painting-statistic-bg-color: @base-8;
+  --user-account-score-flex-bg: @base-8;
+
+  --bets-window-seting-bg-color: @base-2;
+  --bets-window-seting-text-color: @base-3;
+
+  --rules-bg-color: @base-2;
+  --about-us-bg-color: @base-2;
+  --partnership-bg-color: @base-2;
+  --money-action-bg-color: @base-2;
+  --modal-cashout-bg-color: @base-8;
+  --bet-advice-bg-color: @base-2;
+  --bet-aside-money-bg-color: @base-8;
+  --bet-aside-pay-bg-color: @base-8;
+
+  --active-painting-button-color: @base-4;
+
+  --change-password-button-border-color: @base-4;
+  --change-password-button-bg-color: @base-4;
+
+  --bad-modal-bets-costructor-bg-color: @base-8;
+
+  --constructor-mini-bg-color: @base-1;
+
+  --search-active-bg-color: @base-2;
+  --line-dropdown-active-coef-bg-color: @base-7;
+
+  --bets-window-tittle-coupon-color: @base-11;
+  --bets-window-tittle-current-bets-color: @base-11;
+  --join-login-pasword-text-color: @base-11;
+  --menu-scroll-list-my-matches-and-allsport-icon-color: @base-6;
+  --menu-scroll-list-football: @base-10;
+  --menu-scroll-list-tennis: @base-10;
+  --menu-scroll-list-hockey: @base-10;
+  --menu-scroll-list-basketball: @base-10;
+  --menu-scroll-list-volleyball: @base-10;
+  --menu-scroll-list-handball: @base-10;
+  --menu-scroll-list-baseball: @base-10;
+
+  // new color
+  --user-account-main-filter-score-text-color: @base-11;
+  --user-account-main-filter-score-triangle-color: @base-11;
+  --header-active-nav-text-color: @base-4;
+  --top-nav-background-color: @base-2;
+
+  // new new color
+  --top-nav-close-icon-color: @base-3;
+  --registration-input-active-background-color: @base-5;
+  --registration-input-active-text-color: @base-11;
+  --user-account-header-border-color: @base-1;
+}

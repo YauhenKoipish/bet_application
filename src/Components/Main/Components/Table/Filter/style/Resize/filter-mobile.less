@@ -1,0 +1,52 @@
+@media screen and (max-width: 413px) {
+  .filter__main {
+    width: 130px;
+  }
+
+  .filter__type {
+    width: 167px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .dropdown {
+    margin-top: 40px;
+  }
+  .dropdowm__elem {
+    &:last-child {
+      .filter__elem.two {
+        justify-content: center;
+        margin-right: 19px;
+      }
+    }
+  }
+  .filter {
+    // height: 80px;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .filter__name {
+    // height: 40px;
+    // width: auto;
+  }
+
+  .filter__main {
+    max-width: 100%;
+    // width: auto;
+  }
+
+  .filter__type {
+    // top: 40px;
+
+    width: 120px;
+    // height: 40px;
+
+    background-color: var(--title-table-line-bg);
+    & .filter__elem:last-child {
+      text-align: center;
+      // justify-content: center;
+      // background: red;
+    }
+  }
+}

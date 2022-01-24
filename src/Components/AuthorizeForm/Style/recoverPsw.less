@@ -1,0 +1,91 @@
+.login__restore {
+    padding: 15px;
+    // .flex;
+    flex-direction: column;
+    align-items: center;
+    .button {
+        background: none;
+    }
+    button.savePsw {
+        margin-top: 10px;
+        width: 180px;
+        background: var(--button-accept);
+        color: white;
+        height: 40px;
+        margin: 20px auto 0;
+        justify-content: center;
+    }
+}
+
+.recover_birthday {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .flex {
+        justify-content: space-between;
+        .login__input--nationality {
+            width: 80px;
+            .login__toggle-button {
+                position: static;
+                width: 100%;
+            }
+            .login__choice {
+                width: 100%;
+                .login__country {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.recover_birthday.error {
+    .login__input--nationality {
+        border-color: var(--error-color-red);
+    }
+}
+
+.code_recover_psw {
+    width: 100%;
+    .flex;
+
+    height: 40px;
+    background: none;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.code_recover_psw.login__input.error {
+    border-color: var(--error-color-red);
+}
+.psw {
+    margin-bottom: 10px;
+    input {
+        width: 100%;
+        background: none;
+        border: none;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .text {
+        font-size: 12px;
+    }
+}
+.login__resend.recoverPsw {
+    position: static;
+}
+.psw.error {
+    .text {
+        color: var(--error-color-red);
+    }
+}
+.center {
+    align-items: center;
+}
+
+.recover_birthday {
+    .error_date {
+        color: var(--error-color-red);
+        font-size: 12px;
+    }
+}

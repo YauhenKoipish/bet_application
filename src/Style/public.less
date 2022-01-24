@@ -1,0 +1,110 @@
+// input
+
+input {
+  width: 280px;
+  height: 42px;
+  background: var(--input-bg);
+  border-radius: 4px;
+  padding-left: 10px;
+  &:placeholder-shown {
+    color: white;
+    top: 15px;
+    & ~ .name_input {
+      position: absolute;
+      top: 15px;
+      left: 10px;
+    }
+  }
+  &::placeholder {
+    color: white;
+    font-size: 0;
+  }
+
+  & ~ .name_input {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    padding: 0;
+  }
+
+  & ~ .icon {
+    position: absolute;
+    right: 7px;
+    top: 12px;
+  }
+  &.error {
+    border: 1px solid var(--error-color-red);
+  }
+  & ~ .error_text {
+    &:before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+    }
+  }
+}
+
+//error
+
+.error {
+  input {
+    border: 1px solid var(--error-color-red);
+  }
+}
+
+// button
+
+.button,
+button {
+  width: 210px;
+  height: 42px;
+
+  background: var(--button-bg);
+  border-radius: 4px;
+  &.no_style {
+    background: none;
+    color: white;
+    border: 1px solid var(--change-password-button-cansel);
+  }
+}
+
+// icon before phone
+
+// .before_phone {
+//   position: relative;
+//   //   width: 9px;
+//   height: 18px;
+//   padding-left: 26px;
+// }
+
+// .before_mail {
+//   position: relative;
+//   width: 9px;
+//   height: 18px;
+//   padding-left: 26px;
+//   &:before {
+//     content: "";
+//     left: 0;
+//     position: absolute;
+//     width: 18px;
+//     height: 13px;
+//     background: url(../img/icon/mail.svg);
+//     background-size: 100%;
+//   }
+// }
+
+//
+.absl {
+  position: absolute;
+}
+
+.remove_width_limitation {
+  width: 100%;
+  padding-right: 0;
+  .right_slide_deskt {
+    width: 100%;
+  }
+}

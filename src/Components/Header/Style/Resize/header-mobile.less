@@ -1,0 +1,204 @@
+@media screen and (max-width: 600px) {
+  .header {
+    height: 70px;
+  }
+
+  .language_swither {
+    margin-left: 65px;
+  }
+
+  .login {
+    position: absolute;
+    margin-top: 40px;
+
+    //overflow-y: scroll;
+  }
+
+  .login__wrapper {
+    display: none;
+  }
+
+  .login__titles-list {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .login__popup {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    padding-top: 30px;
+    transform: translate(0);
+    background: var(--authorize-form-bg);
+  }
+
+  .login__registration {
+    width: 100%;
+  }
+
+  .login__top {
+    height: auto;
+  }
+
+  .login__personal-info {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .login__register-form {
+    input {
+      font-size: 14px !important;
+    }
+  }
+
+  .login__label {
+    width: 100%;
+  }
+
+  .login__label--code {
+    left: 170px;
+
+    width: 50px;
+    margin-left: 10px;
+    input {
+      width: 50px;
+    }
+  }
+
+  .login__resend {
+    left: 260px;
+  }
+
+  .login__input {
+    width: 300px;
+  }
+
+  .login__input--nationality {
+    // width: 140px;
+  }
+
+  .login__label--date {
+    width: 140px;
+
+    input {
+      width: 140px;
+    }
+
+    &.error {
+      width: 140px;
+    }
+  }
+
+  .login__label--promo {
+    width: 140px;
+  }
+
+  .login__input--date {
+    width: 140px;
+  }
+
+  .login__label--number {
+    width: 157px;
+
+    input {
+      width: 157px;
+    }
+  }
+
+  .login__bottom {
+    justify-content: space-between;
+  }
+
+  .login__enter {
+    min-height: 80vh;
+  }
+
+  .login__get-code {
+    left: 184px;
+  }
+
+  .login__passwords {
+    .login__label {
+      width: 140px;
+
+      &:last-of-type {
+        // margin-left: 19px;
+      }
+    }
+
+    .login__input {
+      width: 140px;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .login__submit-button {
+    margin: 0 auto;
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+
+  .login__promo {
+    .login__label {
+      margin-right: 0;
+    }
+  }
+
+  .login__bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login__submit-button {
+    margin-top: 28px;
+  }
+
+  .login__label--number {
+    width: 130px;
+
+    input {
+      width: 130px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .login__label {
+    width: 280px;
+  }
+
+  .login__input {
+    width: 280px;
+  }
+
+  .login__label--email {
+    width: 280px;
+
+    input {
+      width: 280px;
+    }
+  }
+
+  .login__label--nationality.three-select {
+    // width: 260px;
+  }
+
+  .login__get-code {
+    left: 164px;
+  }
+
+  .login__label--code {
+    left: 160px;
+  }
+
+  .login__resend {
+    left: 240px;
+  }
+
+  .login__label--promo {
+    width: 140px;
+  }
+}

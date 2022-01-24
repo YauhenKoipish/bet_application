@@ -1,0 +1,329 @@
+.bets {
+  height: 100vh;
+
+  overflow-y: auto;
+
+  .constructor-mini__header {
+    padding-left: 20px;
+  }
+}
+
+.bets__main {
+  padding-bottom: 160px;
+}
+
+.bets__titles {
+  display: none;
+}
+.icon_arrows {
+  display: none;
+}
+.bets__item {
+  position: relative;
+
+  padding-top: 15px;
+  // padding-bottom: 30px;
+
+  border-bottom: 2px solid var(--bg-site);
+  background-color: var(--mybets-bets-bg);
+
+  &.cashout-button {
+    padding-bottom: 62px;
+  }
+
+  &.editing {
+    border: 2px solid var(--editing-border);
+
+    .icon_arrows {
+      display: block;
+    }
+    .bet__ordinar {
+      // background: var(--ticket-editing);
+    }
+    .bets__cashout-button {
+      width: 100%;
+      height: 32px;
+    }
+    .bet-aside__money {
+      input {
+        border-bottom: 1px solid var(--color-text-white);
+        pointer-events: auto;
+      }
+
+      span {
+        display: inline;
+      }
+    }
+    .bets__cashout-button.bets__cashout {
+      background: var(--button-other-bg);
+      color: var(--button-sml-size-color-text);
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      border-radius: 4px;
+    }
+    .bet-aside__money {
+      span:last-child {
+        display: none;
+      }
+      span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 140%;
+      }
+      input {
+        border-radius: 4px;
+        border: none;
+        font-family: Roboto;
+        font-style: normal;
+        padding: 7px 0px 0px 6px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &.bonus-bet {
+    .bet-aside__bet .bet-aside__money {
+      position: relative;
+
+      input {
+        padding-right: 15px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: 16px;
+        width: 12px;
+        height: 13px;
+
+        background: url("../img/bonus.svg") no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+
+  &.minimized {
+    padding-bottom: 20px;
+
+    .bet__description {
+      display: none;
+    }
+
+    .bet__ordinar {
+      display: none;
+    }
+
+    .bets__privilege {
+      display: none;
+    }
+
+    .bet-aside__bet {
+      display: none;
+    }
+
+    .bets__history {
+      display: none;
+    }
+
+    .bets__buttons {
+      display: none;
+    }
+
+    &.cashout-button {
+      padding-bottom: 10px;
+    }
+
+    .bet-service__open {
+      transform: rotate(180deg);
+      top: 6px;
+    }
+
+    .constructor-mini__bet {
+      display: none;
+    }
+  }
+}
+
+.bets__main {
+  min-height: 100%;
+  background-color: var(--coupon-bg);
+}
+
+.bets__main-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.bets__data {
+  padding: 0 11px;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 130%;
+  font-size: 11px;
+
+  opacity: 0.5;
+}
+
+.bets__privilege {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.bets__loyalty {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &.bonus-loyalty {
+    .bets__quantity {
+      position: relative;
+      padding-right: 15px;
+
+      text-decoration: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        width: 10px;
+        height: 10px;
+
+        background: url("../img/bonus.svg") no-repeat center;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.bets__quantity {
+  text-align: right;
+  text-decoration: underline;
+}
+
+.bets__buttons {
+  position: absolute;
+  bottom: 30px;
+
+  width: 100%;
+}
+
+.bets__buttons-set {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // margin: 0 auto;
+}
+
+.bets__cashout-button {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 145px;
+  background-color: var(--mybets-bets-button-chash-out);
+  border-radius: 4px;
+  font-size: 13px;
+  flex-direction: column;
+
+  span {
+    &:last-of-type {
+      text-align: right;
+      font-weight: 500;
+    }
+  }
+}
+
+.bets__settings-button {
+  width: 60px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  background-color: var(--mybets-bets-button-chash-out);
+  border-radius: 4px;
+
+  span {
+    display: block;
+    width: 19px;
+    height: 19px;
+
+    // background: url("../img/filter.svg") no-repeat center;
+  }
+}
+
+.bets__modal-cashout {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.bets__service {
+  width: 144px;
+}
+
+.bets__blocked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(32, 76, 78, 0.8);
+
+  span {
+    display: block;
+    width: 170px;
+    text-align: center;
+  }
+}
+
+.bets__not-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--right-component-coupon-ordinar-color);
+  opacity: 0.5;
+}
+
+.history {
+  .bets__data {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    flex-direction: column;
+  }
+
+  .bets__privilege {
+    padding-right: 50px;
+  }
+}

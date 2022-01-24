@@ -1,0 +1,119 @@
+.modal-cashout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(37, 48, 48, 0.5);
+}
+
+.modal-cashout__modal {
+  width: 335px;
+  height: 265px;
+
+  background-color: var(--modal-cashout-bg-color);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.modal-cashout__header {
+  padding: 12px;
+  margin-bottom: 48px;
+
+  font-weight: 500;
+  text-align: center;
+}
+
+.modal-cashout__text {
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.modal-cashout__range {
+  position: relative;
+
+  width: 240px;
+  margin: 0 auto;
+}
+
+.modal-cashout__main-line {
+  width: 100%;
+  height: 2px;
+
+  background-color: var(--color-text-white);
+}
+
+.modal-cashout__grow-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 2px;
+
+  background-color: var(--button-accept);
+}
+
+.modal-cashout__mask {
+  height: 40px;
+  width: 100%;
+  margin-top: -27px;
+}
+
+.modal-cashout__toggle {
+  padding: 10px;
+
+  position: absolute;
+  top: -9px;
+  right: -3px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: var(--button-accept);
+  border-radius: 50%;
+}
+
+.modal-cashout__quantity {
+  display: flex;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modal-cashout__custom {
+  input {
+    padding-bottom: 3px;
+    width: 80px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: var(--color-text-white);
+    font-weight: 300;
+    text-align: right;
+
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.modal-cashout__button {
+  display: flex;
+  justify-content: center;
+
+  button {
+    width: 210px;
+    height: 40px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-text-white);
+
+    background-color: var(--button-accept);
+    border: none;
+  }
+}

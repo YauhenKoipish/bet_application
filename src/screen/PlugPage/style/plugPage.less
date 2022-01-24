@@ -1,0 +1,249 @@
+.plugPage_container {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+
+  background-image: url("../img/bg_container.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  font-size: 1.8vh;
+  font-family: "MullerLight";
+  padding-bottom: 13%;
+  padding-bottom: 6vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+
+  .right_to_left {
+    opacity: 0.1;
+  }
+  .plugPage_logo {
+    position: absolute;
+    top: 3%;
+    left: 6%;
+    top: 3vh;
+    left: 3vh;
+  }
+  .plugPage_title {
+    flex-shrink: 0;
+    background: url("../img/bg_title.png");
+
+    height: 75vw;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    align-items: center;
+    margin: 2.2% 0 0 10.8%;
+    margin: 1vh 0 0 5vh;
+    position: relative;
+
+    span {
+      font-family: "MullerBold";
+      font-style: italic;
+      font-size: 43px;
+      line-height: 100%;
+      position: absolute;
+      top: 50%;
+      right: 40%;
+      transform: translate(50%);
+      width: 175px;
+      color: #edf901;
+      // font-size: 7vh;
+      font-weight: "bold";
+      transform: rotate(-6deg);
+      text-shadow: 0px 0px 1px #edf901, 0 0 10em #edf901; /* Параметры тени */
+    }
+  }
+
+  .plugPage_text_container {
+    padding: 0 14%;
+    margin-top: 6.5%;
+    padding: 0 6.5vh;
+    margin-top: 3vh;
+    letter-spacing: 0.5px;
+
+    .text {
+      color: #cccccc;
+      font-size: 122%;
+      margin-bottom: 2.5%;
+      line-height: 145%;
+      font-size: 2.2vh;
+      margin-bottom: 1.3vh;
+      line-height: 3.2vh;
+
+      span.bold {
+        font-family: "MullerBold";
+        font-weight: "bold";
+      }
+      span {
+        font-weight: "light";
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .plugPage_bottom {
+    // position: absolute;
+    // bottom: 3vh;
+    // right: 50%;
+    // transform: translateX(50%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    .plugPage_btn_login {
+      display: flex;
+      justify-content: center;
+      padding: 0 14%;
+      padding: 0 6.5vh;
+
+      button {
+        border-radius: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        width: 100%;
+        color: white;
+        font-size: 139%;
+        font-size: 2.5vh;
+        background: #3b8d4d;
+        text-align: center;
+        font-family: "MullerRegular";
+      }
+    }
+  }
+  .plugPage_sub_text {
+    padding: 0 14%;
+    padding: 0 6.5vh;
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 3%;
+    bottom: 3vh;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    .phoneText {
+      font-size: 90%;
+      font-size: 1.8vh;
+      margin-top: 1px;
+    }
+    a {
+      letter-spacing: 0.5px;
+      color: #488fe8;
+      text-decoration: underline;
+      font-size: 117%;
+      font-size: 2.1vh;
+    }
+  }
+
+  .plugPage_content_auth {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    bottom: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .plugPage_btn_close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      color: white;
+    }
+    .plugPage_signIn {
+      height: 50px;
+      width: 240px;
+      margin: 50px 60px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border-radius: 7px;
+      font-size: 19px;
+      background: #3b8d4d;
+      // border: 1px solid white;
+    }
+  }
+
+  .plugPage_bottom {
+    // position: absolute;
+    // bottom: 30px;
+  }
+
+  .plug_authorize {
+    padding: 30px;
+    background: rgba(83, 140, 84, 0.8);
+    // border-radius: 10px;
+    position: relative;
+    .plugPage_area_input {
+      position: relative;
+      .input {
+        position: relative;
+        background: none;
+        width: 240px;
+        margin: 0 auto;
+        font-size: 14px;
+        border-bottom: 1px solid white;
+        margin-bottom: 15px;
+        span {
+          position: absolute;
+          z-index: 8;
+
+          top: 0;
+          left: 10px;
+        }
+        input {
+          position: relative;
+          bottom: 0;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          border: none;
+          background: none;
+
+          color: white;
+          z-index: 11;
+          height: 50px;
+          padding-left: 20px;
+          font-size: 16px;
+
+          &:placeholder-shown {
+            & ~ span {
+              position: absolute;
+              top: 20px;
+              left: 10px;
+            }
+          }
+          &:focus {
+            & ~ span {
+              position: absolute;
+              top: 0px;
+              left: 10px;
+            }
+          }
+          &:placeholder {
+            font-size: 0;
+          }
+        }
+      }
+    }
+
+    &.error {
+      .input {
+        border-color: red;
+      }
+    }
+  }
+}

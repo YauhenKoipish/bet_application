@@ -1,0 +1,84 @@
+.about-us {
+  min-height: 880px;
+  padding: 30px 80px;
+  padding-left: 0;
+  background-color: var(--about-us-bg-color);
+
+  //background-color: #0c1855;
+  //background-color: #253030;
+  // background-color: #000000;
+
+  font-size: 13px;
+
+  p {
+    margin-bottom: 30px;
+
+    line-height: 21px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.about-us__header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+
+  margin-bottom: 60px;
+  padding-left: 65px;
+
+  span {
+    font-size: 80px;
+    line-height: 68px;
+    font-weight: 500;
+    color: #99cccc;
+    opacity: 0.5;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    z-index: 0;
+
+    width: 245px;
+    height: 42px;
+
+    opacity: 0.8;
+
+    background: var(--right-component-coupon-header-item-color);
+  }
+}
+
+.about-us__component {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 10px;
+
+    line-height: 21px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about-us__text {
+  padding-left: 80px;
+}

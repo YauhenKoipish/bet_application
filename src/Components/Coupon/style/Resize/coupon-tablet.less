@@ -1,0 +1,403 @@
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .coupon__sum-up {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-top: 20px;
+
+    .coupon__money {
+      width: 60px;
+    }
+
+    div {
+      width: 47%;
+      flex-shrink: 0;
+    }
+  }
+
+  .coupon__sum {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .coupon__money {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .bets-window__main .coupon.open {
+    background-color: var(--coupon-bg-sml);
+    .coupon__title {
+      background-color: var(--coupon-bg-sml);
+      .coupon__multibet {
+        color: var(--coupon-sml-text-color);
+      }
+    }
+    .coupon-item__info {
+      .coupon-item__main-info {
+        width: 100%;
+      }
+    }
+    .title_sml {
+      justify-content: flex-start;
+      .name {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .coupon-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--coupon-bg-bet-sml);
+  }
+
+  .coupon-item__main-info {
+    width: 305px;
+
+    font-size: 14px;
+  }
+
+  .coupon-item__name {
+    width: 280px;
+  }
+
+  .coupon-item__cause {
+    font-size: 11px;
+  }
+
+  .coupon-item__score {
+    font-size: 14px;
+  }
+
+  .coupon-item__total {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .coupon-item__sum {
+    width: 43%;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+    .coupon-item__text {
+      margin-top: 4px;
+    }
+  }
+
+  .coupon-item__payment {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  .coupon-item__text {
+    margin-bottom: 0;
+    margin-right: 10px;
+
+    font-size: 11px;
+  }
+
+  .coupon-item__input {
+    input {
+      font-size: 14px;
+    }
+    .change__input {
+      font-size: 14px;
+    }
+  }
+
+  .coupon-item__max {
+    font-size: 11px;
+  }
+
+  .coupon-item__quantity {
+    font-size: 14px;
+  }
+
+  .coupon-item__dropdown {
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bets-window > .bets-window__title {
+    height: 38px;
+    .close_icon {
+      right: 0px;
+      height: 30px;
+      width: 30px;
+      .flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+    }
+  }
+
+  .bets-window__main .coupon.open {
+    // padding-top: 10px;
+    // color: var(--coupon-sml-text-color);
+    background-color: var(--coupon-bg-sml);
+    .coupon-item__other {
+      margin-left: 0;
+      span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .coupon__title {
+      margin-left: 12px;
+      display: flex;
+      background-color: var(--coupon-bg-sml);
+      .coupon__multibet {
+        color: var(--coupon-sml-text-color);
+      }
+    }
+    .coupon__total {
+      position: fixed;
+      z-index: 8;
+      bottom: 0;
+      margin: 0;
+      width: 100%;
+      background-color: var(--coupon-sum-bg);
+      padding-bottom: 30px;
+      // height: 80px;
+      .coupon__sum-up {
+        border-radius: 0;
+        color: var(--coupon-sum-title-text-color);
+        padding: 0;
+        display: flex;
+        height: 30px;
+        padding: 0 30px;
+        .coupon__sum {
+          margin: 0;
+          &:first-child {
+            margin-right: 37px;
+          }
+        }
+      }
+      .coupon__buttons {
+        height: 54px;
+        margin: 0;
+        width: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 25px 10px 0 0;
+        align-items: center;
+        background: var(--coupon-sum-bg);
+        .coupon__accept {
+          border-radius: 4px;
+          width: 180px;
+          height: 42px;
+          button {
+            font-family: Roboto;
+            font-style: normal;
+
+            font-size: 14px;
+            line-height: 16px;
+
+            height: 42px;
+            border-radius: 4px;
+            width: 100%;
+          }
+        }
+        .coupon__clear {
+          border-radius: 4px;
+          color: var(--coupon-sum-title-text-color);
+          width: 92px;
+          height: 42px;
+          border: 1px solid var(--coupon-button);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+    .title_sml {
+      padding-top: 4px;
+      justify-content: flex-start;
+      .name {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .bets-window__close {
+    display: none;
+  }
+
+  .coupon-item {
+    flex-direction: column;
+    margin: 0 20px 7px;
+    // padding: 15px 10px;
+    padding: 8px 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--coupon-bg-bet-sml);
+    border-radius: 10px;
+  }
+  .coupon-item__input {
+    background-color: var(--coupon-sml-input-bg);
+    .change__input {
+      height: 22px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      border: none;
+      &.error-border {
+        border: none;
+      }
+      color: var(--coupon-sml-input-text-color);
+    }
+    .coupon-item__max {
+      position: absolute;
+      top: 3px;
+      right: -65px;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .constructor-mini__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .constructor__top {
+    width: 365px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .user-account {
+    .constructor__top {
+      width: 213px;
+    }
+
+    .constructor-mini__header {
+      padding: 0;
+    }
+
+    .constructor-mini__bet {
+      padding: 0;
+      padding-top: 20px;
+      margin-left: -19px;
+
+      &::after {
+        left: 2px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 726px) {
+  .bets-window__main .coupon.open {
+    .coupon__total {
+      .coupon__buttons {
+        width: 40%;
+
+        .coupon__accept {
+          padding-left: 15px;
+          button {
+          }
+        }
+        .coupon__clear {
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width: 599px) {
+  .coupon__text {
+    margin-right: 10px;
+  }
+  .bets-window__main .coupon.open {
+    .coupon__total {
+      display: flex;
+      justify-content: space-between;
+      .coupon__sum-up {
+        padding-top: 15px;
+        flex-direction: column;
+        margin: 0;
+        width: 250px;
+        .coupon__sum {
+          width: 100%;
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 0;
+          &:first-child {
+            margin: 0 0 15px 0;
+          }
+          .coupon__money {
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .coupon__text {
+  }
+  .bets-window__main .coupon.open {
+    .coupon__total {
+      .coupon__sum-up {
+        flex-direction: row;
+        width: 100%;
+        padding: 20px 20px 0 20px;
+        justify-content: space-between;
+        .coupon__sum {
+          width: auto;
+          margin: 0;
+
+          &:first-child {
+            margin: 0;
+          }
+          .coupon__money {
+            width: auto;
+          }
+        }
+      }
+      .coupon__buttons {
+        width: 100%;
+        padding: 25px 20px 0 20px;
+
+        .coupon__accept {
+          padding: 0;
+          button {
+          }
+        }
+        .coupon__clear {
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+}

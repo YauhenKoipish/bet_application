@@ -1,0 +1,155 @@
+@media screen and (max-width: 600px) {
+  .verification-courier__title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .verification {
+    font-size: 11px;
+  }
+
+  .verification__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+  }
+
+  .verification__blocked {
+    font-size: 14px;
+  }
+
+  .verification__row {
+    .verification__button {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+
+      &::before {
+        top: auto;
+        bottom: -15px;
+        left: 0;
+
+        width: auto;
+        height: auto;
+
+        font-size: 9px;
+
+        background: none;
+        transform: translateY(0);
+      }
+    }
+
+    .verification__text {
+      font-size: 0;
+      width: 100%;
+      height: 100%;
+
+      background: url("../../img/clip.svg") no-repeat center;
+    }
+
+    &.checking {
+      .verification__button {
+        &::before {
+          content: "В обработке";
+          top: auto;
+          bottom: -15px;
+          left: -6px;
+
+          width: 55px;
+          height: auto;
+
+          font-size: 9px;
+          opacity: 0.5;
+
+          background: none;
+          transform: translateY(0);
+        }
+      }
+
+      .verification__text {
+        background: url("../../img/checking.svg") no-repeat center;
+      }
+    }
+
+    &.loading {
+      .block-elements .full-elements {
+        margin-right: 2px;
+      }
+    }
+
+    &.error {
+      .verification__button {
+        &::before {
+          content: "Не принято";
+          top: auto;
+          bottom: -15px;
+          left: -4px;
+
+          width: 55px;
+          height: auto;
+
+          font-size: 9px;
+
+          background: none;
+          transform: translateY(0);
+        }
+      }
+
+      .verification__text {
+        background: url("../../img/error.svg") no-repeat center;
+      }
+    }
+
+    &.done {
+      .verification__button {
+        &::before {
+          content: "Принято";
+          top: auto;
+          bottom: -15px;
+          left: 2px;
+
+          width: 55px;
+          height: auto;
+
+          font-size: 9px;
+          opacity: 0.5;
+
+          background: none;
+          transform: translateY(0);
+        }
+      }
+
+      .verification__text {
+        background: url("../../img/done.svg") no-repeat center;
+      }
+
+      .verification__input {
+        input {
+          pointer-events: none;
+          border-bottom: 0;
+        }
+
+        .verification__advice {
+          display: none;
+        }
+      }
+    }
+
+    &:last-of-type {
+      .verification__left {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .verification__input {
+    margin-left: 36px;
+  }
+
+  .verification__mistake {
+    margin-top: 16px;
+
+    font-size: 11px;
+  }
+}

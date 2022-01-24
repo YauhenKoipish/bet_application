@@ -1,0 +1,130 @@
+.user-info {
+  position: relative;
+
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+  &.open {
+    .user-info__menu {
+      display: block;
+    }
+  }
+}
+
+.user-info__menu {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  z-index: 1;
+
+  display: none;
+  width: 200px;
+
+  background-color: var(--right-component-coupon-ordinar-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+  .user-info__icon {
+    position: absolute;
+    right: 0;
+    top: -57px;
+
+    display: flex;
+    padding-top: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 44px;
+    height: 57px;
+
+    background-color: var(--right-component-coupon-ordinar-color);
+  }
+}
+
+.user-info__icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.user-info__top {
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid var(--right-component-coupon-ordinar-border-color);
+}
+
+.user-info__money {
+  margin-bottom: 10px;
+}
+
+.user-info__line {
+  display: flex;
+  padding: 0 20px;
+  height: 37px;
+  align-items: center;
+
+  &:last-of-type {
+    div:last-of-type {
+      margin-right: 5px;
+    }
+  }
+
+  div:last-of-type {
+    margin-left: auto;
+  }
+
+  &.active {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 2px;
+      height: 100%;
+
+      background-color: var(--user-menu-color-active-balance);
+    }
+  }
+
+  &.bonus-icon {
+    div:last-of-type {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: -15px;
+
+        width: 10px;
+        height: 12px;
+
+        background: url("../Image/bonus-icon/bonus.svg") no-repeat center;
+      }
+    }
+  }
+}
+
+.user-info__buttons {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.user-info__deposit {
+  width: 110px;
+}
+
+.user-info__hide {
+  width: 40px;
+}

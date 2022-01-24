@@ -1,0 +1,62 @@
+.terms {
+  padding: 0 40px;
+  padding-bottom: 40px;
+
+  &--first {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+
+      width: 400px;
+      height: 2px;
+      margin-left: -200px;
+
+      background: url("../img/alfa-club/green.svg") no-repeat;
+    }
+  }
+}
+
+.terms__title {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.terms__description {
+  margin-top: 10px;
+}
+
+.terms__list {
+  margin-top: 20px;
+}
+
+.terms__text {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.terms__rules {
+  margin-bottom: 20px;
+}
+
+.terms__specification {
+  padding-left: 28px;
+  margin-top: 10px;
+
+  li {
+    margin-bottom: 10px;
+
+    list-style: disc;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
